@@ -12,8 +12,22 @@ import { slugCatalogRouter } from './routes/slug-catalog.routes.js';
 
 export const app = express();
 
+const allowedOrigins = new Set([
+  'http://localhost:5173',
+  'https://corporativofront.vercel.app',
+  env.frontendUrl,
+  ...env.frontendUrls
+]);
+
 app.disable('x-powered-by');
-app.use(cors({ origin: env.frontendUrl }));
+app.use(cors({
+  origin(origin, callback) {
+    if (!origin || allowedOrigins.has(origin)) return callback(null, true);
+    return callback(null, false);
+  },
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json({ limit: '1mb' }));
 
 app.use('/api/health', healthRouter);

@@ -13,6 +13,10 @@ export function validateEnvironment() {
 export const env = {
   port: Number(process.env.PORT) || 3001,
   frontendUrl: process.env.FRONTEND_URL || 'http://localhost:5173',
+  frontendUrls: (process.env.FRONTEND_URLS || '')
+    .split(',')
+    .map((url) => url.trim())
+    .filter(Boolean),
   supabaseUrl: process.env.SUPABASE_URL,
   supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY
 };

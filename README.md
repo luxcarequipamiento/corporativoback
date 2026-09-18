@@ -9,6 +9,8 @@ Backend privado para la plataforma corporativa, preparado para Express y Supabas
 3. Ejecuta `npm install` dentro de `backend`.
 4. Inicia el servidor con `npm run dev`.
 
+Para varios dominios frontend, configura `FRONTEND_URLS` como una lista separada por comas y sin `/` final.
+
 ## Rutas iniciales
 
 - `GET /api/health`: comprueba que el servidor responde.
