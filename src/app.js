@@ -15,6 +15,7 @@ export const app = express();
 const allowedOrigins = new Set([
   'http://localhost:5173',
   'https://corporativofront.vercel.app',
+  'https://corporativofront-l1n3ytuyf-luxcar3.vercel.app',
   env.frontendUrl,
   ...env.frontendUrls
 ]);
