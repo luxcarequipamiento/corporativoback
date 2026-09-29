@@ -38,13 +38,16 @@ Todos estos endpoints requieren JWT con rol `ADMIN`. Cada recurso admite listado
 | `/aplicaciones` | `lc_aplicacion` |
 | `/roles` | `lc_rol` |
 | `/tipos-producto` | `lc_tipo_producto` |
-| `/productos` | `lc_producto -> lc_tipo_producto -> lc_producto_cliente -> lc_cliente` |
-| `/kits` | `lc_kit -> lc_kit_producto -> lc_producto -> lc_tipo_producto`, más asignaciones a clientes |
+| `/modelos` | `lc_modelo` |
+| `/productos` | `lc_producto -> lc_tipo_producto/lc_modelo -> lc_producto_cliente -> lc_cliente` |
+| `/kits` | `lc_kit -> lc_kit_producto -> lc_producto/lc_modelo -> lc_tipo_producto`, más asignaciones a clientes |
 | `/usuarios-clientes` | `lc_usuario_cliente` |
 | `/usuarios-aplicaciones` | `lc_usuario_aplicacion` |
 | `/productos-clientes` | `lc_producto_cliente` |
 | `/kits-productos` | `lc_kit_producto` |
 | `/kits-clientes` | `lc_kit_cliente` |
+| `/servicios-paquetes` | `lc_servicio_paquete -> lc_modelo/lc_servicio_paquete_producto -> lc_producto` |
+| `/servicios-paquetes-productos` | `lc_servicio_paquete_producto` |
 
 Los endpoints administrativos de productos y kits incluyen `precio_real`. Nunca deben consumirse desde el portal corporativo.
 
@@ -57,12 +60,14 @@ Requieren JWT. Un `CLIENTE` solo puede consultar su propio `idCliente` o `slug`;
 | GET | `/clientes/:idCliente/productos` | Productos activos y `precio_venta` |
 | GET | `/clientes/:idCliente/accesorios` | Productos activos tipo `ACC` |
 | GET | `/clientes/:idCliente/servicios` | Productos activos tipo `SER` |
+| GET | `/clientes/:idCliente/servicios-paquetes` | Paquetes activos agrupados por modelo |
 | GET | `/clientes/:idCliente/kits` | Kits activos, `precio_venta` y componentes |
 | GET | `/clientes/:idCliente/kits/:idKit` | Detalle de un kit autorizado |
 | GET | `/clientes/slug/:slug` | Perfil seguro del cliente |
 | GET | `/clientes/slug/:slug/productos` | Productos del cliente identificado por slug |
 | GET | `/clientes/slug/:slug/accesorios` | Accesorios del cliente identificado por slug |
 | GET | `/clientes/slug/:slug/servicios` | Servicios del cliente identificado por slug |
+| GET | `/clientes/slug/:slug/servicios-paquetes` | Paquetes de servicios del cliente identificado por slug |
 | GET | `/clientes/slug/:slug/kits` | Kits del cliente identificado por slug |
 | GET | `/clientes/slug/:slug/kits/:idKit` | Kit autorizado identificado por slug |
 
@@ -78,6 +83,7 @@ Requieren JWT con rol `CLIENTE`. No reciben cliente, id ni slug para decidir el 
 | GET | `/corporativo/productos` | Productos activos del cliente autenticado |
 | GET | `/corporativo/accesorios` | Accesorios `ACC` del cliente autenticado |
 | GET | `/corporativo/servicios` | Servicios `SER` del cliente autenticado |
+| GET | `/corporativo/servicios-paquetes` | Paquetes activos por modelo y sus productos |
 | GET | `/corporativo/kits` | Kits activos y componentes autorizados |
 | GET | `/corporativo/kits/:id` | Kit autorizado del cliente autenticado |
 | GET | `/catalogo` | Respuesta agregada compatible con el frontend actual |

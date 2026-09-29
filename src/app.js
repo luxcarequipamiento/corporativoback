@@ -3,7 +3,7 @@ import express from 'express';
 import { env } from './config/env.js';
 import { errorHandler, notFoundHandler } from './middleware/errors.js';
 import { authRouter } from './routes/auth.routes.js';
-import { simpleAdminRouter, kitsRouter, productsRouter, usersRouter } from './routes/admin.routes.js';
+import { simpleAdminRouter, kitsRouter, productsRouter, servicePackagesRouter, usersRouter } from './routes/admin.routes.js';
 import { catalogRouter } from './routes/catalog.routes.js';
 import { clientsRouter } from './routes/clients.routes.js';
 import { corporateRouter } from './routes/corporate.routes.js';
@@ -43,11 +43,14 @@ app.use('/api/usuarios-aplicaciones', simpleAdminRouter('usuariosAplicaciones'))
 app.use('/api/aplicaciones', simpleAdminRouter('aplicaciones'));
 app.use('/api/roles', simpleAdminRouter('roles'));
 app.use('/api/tipos-producto', simpleAdminRouter('tiposProducto'));
+app.use('/api/modelos', simpleAdminRouter('modelos'));
 app.use('/api/productos', productsRouter);
 app.use('/api/productos-clientes', simpleAdminRouter('productosClientes'));
 app.use('/api/kits', kitsRouter);
 app.use('/api/kits-productos', simpleAdminRouter('kitsProductos'));
 app.use('/api/kits-clientes', simpleAdminRouter('kitsClientes'));
+app.use('/api/servicios-paquetes', servicePackagesRouter);
+app.use('/api/servicios-paquetes-productos', simpleAdminRouter('serviciosPaquetesProductos'));
 app.use('/api/corporativo', corporateRouter);
 
 // Debe permanecer despues de las rutas estaticas para no capturar /auth, /kits, etc.

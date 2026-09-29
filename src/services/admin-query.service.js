@@ -6,11 +6,13 @@ const SIMPLE_ENTITIES = {
   aplicaciones: { table: 'lc_aplicacion', id: 'id_aplicacion', fields: ['id_aplicacion', 'codigo', 'nombre', 'descripcion', 'activo'] },
   roles: { table: 'lc_rol', id: 'id_rol', fields: ['id_rol', 'codigo', 'nombre', 'descripcion', 'activo'] },
   tiposProducto: { table: 'lc_tipo_producto', id: 'id_tipo_producto', fields: ['id_tipo_producto', 'codigo', 'nombre', 'descripcion', 'activo'] },
+  modelos: { table: 'lc_modelo', id: 'id_modelo', fields: ['id_modelo', 'codigo_modelo', 'nombre_modelo'] },
   usuariosClientes: { table: 'lc_usuario_cliente', id: 'id_usuario_cliente', fields: ['id_usuario_cliente', 'id_usuario', 'id_cliente', 'activo'] },
   usuariosAplicaciones: { table: 'lc_usuario_aplicacion', id: 'id_usuario_aplicacion', fields: ['id_usuario_aplicacion', 'id_usuario', 'id_aplicacion', 'id_rol', 'activo'] },
   productosClientes: { table: 'lc_producto_cliente', id: 'id_producto_cliente', fields: ['id_producto_cliente', 'id_producto', 'id_cliente', 'precio_venta', 'activo'] },
-  kitsProductos: { table: 'lc_kit_producto', id: 'id_kit_producto', fields: ['id_kit_producto', 'id_kit', 'id_producto', 'cantidad', 'orden', 'activo'] },
-  kitsClientes: { table: 'lc_kit_cliente', id: 'id_kit_cliente', fields: ['id_kit_cliente', 'id_kit', 'id_cliente', 'precio_venta', 'activo'] }
+  kitsProductos: { table: 'lc_kit_producto', id: 'id_kit_producto', fields: ['id_kit_producto', 'id_kit', 'id_producto', 'id_modelo', 'cantidad', 'orden', 'activo'] },
+  kitsClientes: { table: 'lc_kit_cliente', id: 'id_kit_cliente', fields: ['id_kit_cliente', 'id_kit', 'id_cliente', 'precio_venta', 'activo'] },
+  serviciosPaquetesProductos: { table: 'lc_servicio_paquete_producto', id: 'id_servicio_paquete_producto', fields: ['id_servicio_paquete_producto', 'id_servicio_paquete', 'id_producto', 'cantidad', 'orden', 'activo'] }
 };
 
 function pick(record, fields) {
@@ -93,17 +95,20 @@ export async function getUser(id) {
 }
 
 export async function listProducts() {
-  const [products, types, links, clients] = await Promise.all([
+  const [products, types, models, links, clients] = await Promise.all([
     findMany('lc_producto', { orderBy: { column: 'id_producto' } }),
     findMany('lc_tipo_producto'),
+    findMany('lc_modelo'),
     findMany('lc_producto_cliente'),
     findMany('lc_cliente')
   ]);
   const typesById = new Map(types.map((item) => [item.id_tipo_producto, item]));
+  const modelsById = new Map(models.map((item) => [item.id_modelo, item]));
   const clientsById = new Map(clients.map((item) => [item.id_cliente, item]));
   return products.map((product) => ({
-    ...pick(product, ['id_producto', 'codigo', 'nombre', 'descripcion', 'precio_real', 'imagen_url', 'activo']),
+    ...pick(product, ['id_producto', 'id_modelo', 'codigo', 'nombre', 'descripcion', 'precio_real', 'imagen_url', 'activo']),
     tipo_producto: pick(typesById.get(product.id_tipo_producto), ['id_tipo_producto', 'codigo', 'nombre']),
+    modelo: pick(modelsById.get(product.id_modelo), ['id_modelo', 'codigo_modelo', 'nombre_modelo']),
     clientes: links.filter((link) => link.id_producto === product.id_producto).map((link) => ({
       cliente: pick(clientsById.get(link.id_cliente), ['id_cliente', 'codigo', 'nombre', 'slug']),
       precio_venta: link.precio_venta,
@@ -121,9 +126,12 @@ async function kitComponents(kitIds) {
   const links = await findMany('lc_kit_producto', { inFilters: { id_kit: kitIds } });
   const products = await rowsByIds('lc_producto', 'id_producto', links.map((item) => item.id_producto));
   const types = await rowsByIds('lc_tipo_producto', 'id_tipo_producto', products.map((item) => item.id_tipo_producto));
+  const modelIds = links.map((item) => item.id_modelo).concat(products.map((item) => item.id_modelo));
+  const models = await rowsByIds('lc_modelo', 'id_modelo', modelIds);
   const productsById = new Map(products.map((item) => [item.id_producto, item]));
   const typesById = new Map(types.map((item) => [item.id_tipo_producto, item]));
-  return { links, productsById, typesById };
+  const modelsById = new Map(models.map((item) => [item.id_modelo, item]));
+  return { links, productsById, typesById, modelsById };
 }
 
 export async function listKits() {
@@ -132,15 +140,18 @@ export async function listKits() {
     findMany('lc_kit_cliente'),
     findMany('lc_cliente')
   ]);
-  const { links, productsById, typesById } = await kitComponents(kits.map((item) => item.id_kit));
+  const { links, productsById, typesById, modelsById } = await kitComponents(kits.map((item) => item.id_kit));
   const clientsById = new Map(clients.map((item) => [item.id_cliente, item]));
   return kits.map((kit) => ({
     ...pick(kit, ['id_kit', 'codigo', 'nombre', 'descripcion', 'precio_real', 'imagen_url', 'activo']),
     productos: links.filter((link) => link.id_kit === kit.id_kit).map((link) => {
       const product = productsById.get(link.id_producto);
       const type = product ? typesById.get(product.id_tipo_producto) : null;
+      const modelId = link.id_modelo ?? product?.id_modelo;
       return {
         ...pick(product, ['id_producto', 'codigo', 'nombre']),
+        id_modelo: modelId,
+        modelo: pick(modelsById.get(modelId), ['id_modelo', 'codigo_modelo', 'nombre_modelo']),
         tipo: type?.codigo || null,
         cantidad: link.cantidad,
         orden: link.orden,
@@ -158,4 +169,47 @@ export async function listKits() {
 export async function getKit(id) {
   const kits = await listKits();
   return kits.find((kit) => kit.id_kit === id) || null;
+}
+
+export async function listServicePackages() {
+  const [packages, models] = await Promise.all([
+    findMany('lc_servicio_paquete', { orderBy: { column: 'id_servicio_paquete' } }),
+    findMany('lc_modelo')
+  ]);
+  const packageIds = packages.map((item) => item.id_servicio_paquete);
+  const links = packageIds.length
+    ? await findMany('lc_servicio_paquete_producto', { inFilters: { id_servicio_paquete: packageIds } })
+    : [];
+  const products = await rowsByIds('lc_producto', 'id_producto', links.map((item) => item.id_producto));
+  const types = await rowsByIds('lc_tipo_producto', 'id_tipo_producto', products.map((item) => item.id_tipo_producto));
+  const modelsById = new Map(models.map((item) => [item.id_modelo, item]));
+  const productsById = new Map(products.map((item) => [item.id_producto, item]));
+  const typesById = new Map(types.map((item) => [item.id_tipo_producto, item]));
+
+  return packages.map((servicePackage) => ({
+    ...pick(servicePackage, [
+      'id_servicio_paquete', 'id_modelo', 'codigo', 'nombre', 'descripcion',
+      'precio_real', 'precio_venta', 'activo'
+    ]),
+    modelo: pick(modelsById.get(servicePackage.id_modelo), ['id_modelo', 'codigo_modelo', 'nombre_modelo']),
+    productos: links
+      .filter((link) => link.id_servicio_paquete === servicePackage.id_servicio_paquete)
+      .map((link) => {
+        const product = productsById.get(link.id_producto);
+        const type = product ? typesById.get(product.id_tipo_producto) : null;
+        return {
+          ...pick(product, ['id_producto', 'id_modelo', 'codigo', 'nombre']),
+          tipo: type?.codigo || null,
+          cantidad: link.cantidad,
+          orden: link.orden,
+          activo: link.activo
+        };
+      })
+      .sort((a, b) => (a.orden || 0) - (b.orden || 0))
+  }));
+}
+
+export async function getServicePackage(id) {
+  const packages = await listServicePackages();
+  return packages.find((item) => item.id_servicio_paquete === id) || null;
 }

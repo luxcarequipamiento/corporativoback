@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import {
-  getCorporateAccessories, getCorporateKits, getCorporateServices
+  getCorporateAccessories, getCorporateKits, getCorporateServicePackages, getCorporateServices
 } from '../controllers/corporate.controller.js';
 import { loadAccessContext, requireRequestedClient, requireRole } from '../middleware/access.js';
 import { requireAuth } from '../middleware/auth.js';
@@ -16,4 +16,5 @@ slugCatalogRouter.use(
 
 slugCatalogRouter.get('/kits', getCorporateKits);
 slugCatalogRouter.get('/servicios', getCorporateServices);
+slugCatalogRouter.get('/servicios-paquetes', getCorporateServicePackages);
 slugCatalogRouter.get('/accesorios', getCorporateAccessories);

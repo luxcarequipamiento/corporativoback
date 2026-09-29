@@ -1,5 +1,5 @@
 import { getClient, getClientBySlug } from '../services/admin-query.service.js';
-import { getClientKit, getClientKits, getClientProducts } from '../services/catalog.service.js';
+import { getClientKit, getClientKits, getClientProducts, getClientServicePackages } from '../services/catalog.service.js';
 import { AppError } from '../middleware/errors.js';
 import { parsePositiveId, sendResource } from '../utils/request.js';
 
@@ -34,6 +34,7 @@ export const getClientProductsController = clientCollection((id) => getClientPro
 export const getClientAccessoriesController = clientCollection((id) => getClientProducts(id, 'ACC'));
 export const getClientServicesController = clientCollection((id) => getClientProducts(id, 'SER'));
 export const getClientKitsController = clientCollection((id) => getClientKits(id));
+export const getClientServicePackagesController = clientCollection((id) => getClientServicePackages(id));
 
 export async function getClientKitController(request, response, next) {
   try {

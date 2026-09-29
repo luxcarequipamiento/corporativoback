@@ -1,6 +1,6 @@
 import {
-  getClient, getKit, getProduct, getSimpleEntity, getUser,
-  listClients, listKits, listProducts, listSimpleEntity, listUsers
+  getClient, getKit, getProduct, getServicePackage, getSimpleEntity, getUser,
+  listClients, listKits, listProducts, listServicePackages, listSimpleEntity, listUsers
 } from '../services/admin-query.service.js';
 import { parsePositiveId, sendResource } from '../utils/request.js';
 
@@ -33,3 +33,4 @@ export const clientAdminController = handlers(listClients, getClient, 'id_client
 export const userAdminController = handlers(listUsers, getUser, 'id_usuario');
 export const productAdminController = handlers(listProducts, getProduct, 'id_producto');
 export const kitAdminController = handlers(listKits, getKit, 'id_kit');
+export const servicePackageAdminController = handlers(listServicePackages, getServicePackage, 'id_servicio_paquete');

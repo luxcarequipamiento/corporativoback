@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import {
   clientAdminController, getSimple, kitAdminController, listSimple,
-  productAdminController, userAdminController
+  productAdminController, servicePackageAdminController, userAdminController
 } from '../controllers/admin.controller.js';
 import { loadAccessContext, requireRole } from '../middleware/access.js';
 import { requireAuth } from '../middleware/auth.js';
@@ -29,4 +29,5 @@ function resourceRouter(controller) {
 export const usersRouter = resourceRouter(userAdminController);
 export const productsRouter = resourceRouter(productAdminController);
 export const kitsRouter = resourceRouter(kitAdminController);
+export const servicePackagesRouter = resourceRouter(servicePackageAdminController);
 export const adminClientsRouter = resourceRouter(clientAdminController);

@@ -1,4 +1,4 @@
-import { getClientKit, getClientKits, getClientProducts } from '../services/catalog.service.js';
+import { getClientKit, getClientKits, getClientProducts, getClientServicePackages } from '../services/catalog.service.js';
 import { parsePositiveId, sendResource } from '../utils/request.js';
 
 export function getCorporateMe(request, response) {
@@ -27,6 +27,7 @@ export const getCorporateProducts = corporateCollection((id) => getClientProduct
 export const getCorporateAccessories = corporateCollection((id) => getClientProducts(id, 'ACC'));
 export const getCorporateServices = corporateCollection((id) => getClientProducts(id, 'SER'));
 export const getCorporateKits = corporateCollection((id) => getClientKits(id));
+export const getCorporateServicePackages = corporateCollection((id) => getClientServicePackages(id));
 
 export async function getCorporateKit(request, response, next) {
   try {

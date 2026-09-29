@@ -19,6 +19,8 @@ Para varios dominios frontend, configura `FRONTEND_URLS` como una lista separada
 - `POST /api/auth/refresh`: renueva una sesion.
 - `GET /api/auth/me`: devuelve rol y cliente derivados del usuario autenticado.
 - `GET /api/catalogo`: devuelve productos y kits autorizados para el cliente autenticado.
+- `GET /api/modelos`: devuelve los modelos de vehiculo (requiere rol `ADMIN`).
+- `GET /api/servicios-paquetes`: devuelve paquetes de servicios con modelo y productos (requiere rol `ADMIN`).
 - `GET /api/:slug/kits`: kits y precios del cliente autenticado.
 - `GET /api/:slug/servicios`: servicios y precios del cliente autenticado.
 - `GET /api/:slug/accesorios`: accesorios y precios del cliente autenticado.
