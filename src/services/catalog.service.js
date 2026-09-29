@@ -53,8 +53,13 @@ export async function getClientProducts(clientId, typeCode = null) {
 
 export async function getClientKits(clientId) {
   await requireActiveClient(clientId);
-  const kitLinks = (await findMany('lc_kit_cliente', { filters: { id_cliente: clientId } })).filter(isActive);
-  const kits = await activeRowsByIds('lc_kit', 'id_kit', kitLinks.map((item) => item.id_kit));
+  const [kitLinks, productLinks] = await Promise.all([
+    findMany('lc_kit_cliente', { filters: { id_cliente: clientId } }),
+    findMany('lc_producto_cliente', { filters: { id_cliente: clientId } })
+  ]);
+  const activeKitLinks = kitLinks.filter(isActive);
+  const productPricesById = new Map(productLinks.filter(isActive).map((item) => [item.id_producto, item.precio_venta]));
+  const kits = await activeRowsByIds('lc_kit', 'id_kit', activeKitLinks.map((item) => item.id_kit));
   const kitsById = new Map(kits.map((item) => [item.id_kit, item]));
   const kitIds = [...kitsById.keys()];
   const componentLinks = kitIds.length
@@ -68,7 +73,7 @@ export async function getClientKits(clientId) {
   const typesById = new Map(types.map((item) => [item.id_tipo_producto, item]));
   const modelsById = new Map(models.map((item) => [item.id_modelo, item]));
 
-  return kitLinks.flatMap((link) => {
+  return activeKitLinks.flatMap((link) => {
     const kit = kitsById.get(link.id_kit);
     if (!kit) return [];
     const components = componentLinks
@@ -89,6 +94,7 @@ export async function getClientKits(clientId) {
             codigo_modelo: modelsById.get(modelId).codigo_modelo,
             nombre_modelo: modelsById.get(modelId).nombre_modelo
           } : null,
+          precio_venta: productPricesById.get(product.id_producto) ?? null,
           cantidad: item.cantidad,
           orden: item.orden
         }];
@@ -113,6 +119,7 @@ export async function getClientKit(clientId, kitId) {
 
 export async function getClientServicePackages(clientId) {
   const clientProducts = await getClientProducts(clientId);
+  const clientProductsById = new Map(clientProducts.map((item) => [item.id_producto, item]));
   const modelIds = unique(clientProducts.map((item) => item.id_modelo));
   const packages = await activeRowsByIds('lc_servicio_paquete', 'id_modelo', modelIds);
   const packageIds = packages.map((item) => item.id_servicio_paquete);
@@ -148,6 +155,7 @@ export async function getClientServicePackages(clientId) {
           codigo: product.codigo,
           nombre: product.nombre,
           tipo: typesById.get(product.id_tipo_producto)?.codigo || null,
+          precio_venta: clientProductsById.get(product.id_producto)?.precio_venta ?? null,
           cantidad: link.cantidad,
           orden: link.orden
         }];
