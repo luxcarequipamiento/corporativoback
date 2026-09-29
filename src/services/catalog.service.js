@@ -120,20 +120,45 @@ export async function getClientKit(clientId, kitId) {
 export async function getClientServicePackages(clientId) {
   const clientProducts = await getClientProducts(clientId);
   const clientProductsById = new Map(clientProducts.map((item) => [item.id_producto, item]));
-  const modelIds = unique(clientProducts.map((item) => item.id_modelo));
-  const packages = await activeRowsByIds('lc_servicio_paquete', 'id_modelo', modelIds);
+  const packages = (await findMany('lc_servicio_paquete')).filter(isActive);
   const packageIds = packages.map((item) => item.id_servicio_paquete);
   const links = packageIds.length
     ? (await findMany('lc_servicio_paquete_producto', { inFilters: { id_servicio_paquete: packageIds } })).filter(isActive)
     : [];
   const products = await activeRowsByIds('lc_producto', 'id_producto', links.map((item) => item.id_producto));
   const types = await activeRowsByIds('lc_tipo_producto', 'id_tipo_producto', products.map((item) => item.id_tipo_producto));
+  const modelIds = products.map((item) => item.id_modelo).concat(packages.map((item) => item.id_modelo));
   const models = await activeRowsByIds('lc_modelo', 'id_modelo', modelIds);
   const productsById = new Map(products.map((item) => [item.id_producto, item]));
   const typesById = new Map(types.map((item) => [item.id_tipo_producto, item]));
   const modelsById = new Map(models.map((item) => [item.id_modelo, item]));
 
-  return packages.map((servicePackage) => ({
+  return packages.flatMap((servicePackage) => {
+    const packageProducts = links
+      .filter((link) => link.id_servicio_paquete === servicePackage.id_servicio_paquete)
+      .flatMap((link) => {
+        const product = productsById.get(link.id_producto);
+        if (!product) return [];
+        const model = modelsById.get(product.id_modelo);
+        return [{
+          id_producto: product.id_producto,
+          id_modelo: product.id_modelo,
+          codigo: product.codigo,
+          nombre: product.nombre,
+          tipo: typesById.get(product.id_tipo_producto)?.codigo || null,
+          modelo: model ? {
+            id_modelo: model.id_modelo,
+            codigo_modelo: model.codigo_modelo,
+            nombre_modelo: model.nombre_modelo
+          } : null,
+          precio_venta: clientProductsById.get(product.id_producto)?.precio_venta ?? null,
+          cantidad: link.cantidad,
+          orden: link.orden
+        }];
+      })
+      .sort((a, b) => (a.orden || 0) - (b.orden || 0));
+    if (!packageProducts.some((product) => clientProductsById.has(product.id_producto))) return [];
+    return [{
     id_servicio_paquete: servicePackage.id_servicio_paquete,
     id_modelo: servicePackage.id_modelo,
     codigo: servicePackage.codigo,
@@ -145,23 +170,9 @@ export async function getClientServicePackages(clientId) {
       codigo_modelo: modelsById.get(servicePackage.id_modelo).codigo_modelo,
       nombre_modelo: modelsById.get(servicePackage.id_modelo).nombre_modelo
     } : null,
-    productos: links
-      .filter((link) => link.id_servicio_paquete === servicePackage.id_servicio_paquete)
-      .flatMap((link) => {
-        const product = productsById.get(link.id_producto);
-        if (!product) return [];
-        return [{
-          id_producto: product.id_producto,
-          codigo: product.codigo,
-          nombre: product.nombre,
-          tipo: typesById.get(product.id_tipo_producto)?.codigo || null,
-          precio_venta: clientProductsById.get(product.id_producto)?.precio_venta ?? null,
-          cantidad: link.cantidad,
-          orden: link.orden
-        }];
-      })
-      .sort((a, b) => (a.orden || 0) - (b.orden || 0))
-  }));
+      productos: packageProducts
+    }];
+  });
 }
 
 export async function getCorporateCatalog(context) {
