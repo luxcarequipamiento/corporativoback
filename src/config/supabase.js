@@ -13,8 +13,8 @@ export const supabase = createClient(
   }
 );
 
-// Cada operacion de sesion usa una instancia aislada para no reemplazar
-// la autorizacion administrativa del cliente usado en consultas internas.
+// Cada operación de sesión usa una instancia aislada para no reemplazar
+// la autorización administrativa del cliente usado en consultas internas.
 export function createSessionClient() {
   return createClient(env.supabaseUrl, env.supabaseServiceRoleKey, {
     auth: {

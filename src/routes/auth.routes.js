@@ -10,12 +10,12 @@ authRouter.post('/login', async (request, response, next) => {
   try {
     const email = String(request.body?.email || '').trim().toLowerCase();
     const password = String(request.body?.password || '');
-    if (!email || !password) throw new AppError(400, 'Correo y contrasena son obligatorios', 'INVALID_CREDENTIALS');
+    if (!email || !password) throw new AppError(400, 'Correo y contraseña son obligatorios', 'INVALID_CREDENTIALS');
 
     const sessionClient = createSessionClient();
     const { data, error } = await sessionClient.auth.signInWithPassword({ email, password });
     if (error || !data.user || !data.session) {
-      throw new AppError(401, 'Correo o contrasena incorrectos', 'INVALID_CREDENTIALS');
+      throw new AppError(401, 'Correo o contraseña incorrectos', 'INVALID_CREDENTIALS');
     }
 
     const context = await resolveAccessContext(data.user);
@@ -41,7 +41,7 @@ authRouter.post('/refresh', async (request, response, next) => {
     if (!refreshToken) throw new AppError(400, 'Refresh token requerido', 'REFRESH_TOKEN_REQUIRED');
     const sessionClient = createSessionClient();
     const { data, error } = await sessionClient.auth.refreshSession({ refresh_token: refreshToken });
-    if (error || !data.session) throw new AppError(401, 'Sesion no renovable', 'INVALID_REFRESH_TOKEN');
+    if (error || !data.session) throw new AppError(401, 'Sesión no renovable', 'INVALID_REFRESH_TOKEN');
     response.json({ ok: true, session: {
       access_token: data.session.access_token,
       refresh_token: data.session.refresh_token,

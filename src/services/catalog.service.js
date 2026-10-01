@@ -177,7 +177,7 @@ export async function getClientServicePackages(clientId) {
 
 export async function getCorporateCatalog(context) {
   if (context.role.codigo !== 'CLIENTE' || !context.client) {
-    throw new AppError(403, 'Este catalogo requiere un cliente autenticado', 'CLIENT_CONTEXT_REQUIRED');
+    throw new AppError(403, 'Este catálogo requiere un cliente autenticado', 'CLIENT_CONTEXT_REQUIRED');
   }
   const [products, kits, servicePackages] = await Promise.all([
     getClientProducts(context.client.id),

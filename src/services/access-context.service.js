@@ -13,7 +13,7 @@ export async function resolveAccessContext(authUser) {
   if (!user) throw new AppError(403, 'Usuario sin perfil activo', 'PROFILE_NOT_FOUND');
 
   const application = await findOne('lc_aplicacion', 'codigo', 'CORPORATIVO');
-  if (!application) throw new AppError(403, 'Aplicacion corporativa no disponible', 'APPLICATION_DISABLED');
+  if (!application) throw new AppError(403, 'Aplicación corporativa no disponible', 'APPLICATION_DISABLED');
 
   const { data: accessRows, error: accessError } = await supabase
     .from('lc_usuario_aplicacion')
@@ -26,7 +26,7 @@ export async function resolveAccessContext(authUser) {
 
   const role = await findOne('lc_rol', 'id_rol', applicationAccess.id_rol);
   if (!role || !['CLIENTE', 'ADMIN'].includes(role.codigo)) {
-    throw new AppError(403, 'Rol sin permisos para esta aplicacion', 'ROLE_ACCESS_DENIED');
+    throw new AppError(403, 'Rol sin permisos para esta aplicación', 'ROLE_ACCESS_DENIED');
   }
 
   const { data: links, error: linksError } = await supabase
@@ -39,7 +39,7 @@ export async function resolveAccessContext(authUser) {
   let client = null;
   if (role.codigo === 'CLIENTE') {
     if (activeLinks.length !== 1) {
-      throw new AppError(403, 'El usuario cliente debe tener un unico cliente activo', 'INVALID_CLIENT_ACCESS');
+      throw new AppError(403, 'El usuario cliente debe tener un único cliente activo', 'INVALID_CLIENT_ACCESS');
     }
     client = await findOne('lc_cliente', 'id_cliente', activeLinks[0].id_cliente);
     if (!client) throw new AppError(403, 'Cliente inactivo o inexistente', 'CLIENT_NOT_FOUND');

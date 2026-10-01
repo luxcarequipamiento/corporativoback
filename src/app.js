@@ -53,7 +53,7 @@ app.use('/api/servicios-paquetes', servicePackagesRouter);
 app.use('/api/servicios-paquetes-productos', simpleAdminRouter('serviciosPaquetesProductos'));
 app.use('/api/corporativo', corporateRouter);
 
-// Debe permanecer despues de las rutas estaticas para no capturar /auth, /kits, etc.
+// Debe permanecer después de las rutas estáticas para no capturar /auth, /kits, etc.
 app.use('/api/:slug', slugCatalogRouter);
 
 app.use(notFoundHandler);

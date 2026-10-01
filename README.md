@@ -2,7 +2,7 @@
 
 Backend privado para la plataforma corporativa, preparado para Express y Supabase.
 
-## Configuracion
+## Configuración
 
 1. Copia `.env.example` como `.env`.
 2. Completa `SUPABASE_URL` y `SUPABASE_SERVICE_ROLE_KEY`.
@@ -15,11 +15,11 @@ Para varios dominios frontend, configura `FRONTEND_URLS` como una lista separada
 
 - `GET /api/health`: comprueba que el servidor responde.
 - `GET /api/health/database`: comprueba las credenciales de Supabase.
-- `POST /api/auth/login`: inicia sesion con correo y contrasena de Supabase Auth.
-- `POST /api/auth/refresh`: renueva una sesion.
+- `POST /api/auth/login`: inicia sesión con correo y contraseña de Supabase Auth.
+- `POST /api/auth/refresh`: renueva una sesión.
 - `GET /api/auth/me`: devuelve rol y cliente derivados del usuario autenticado.
 - `GET /api/catalogo`: devuelve productos y kits autorizados para el cliente autenticado.
-- `GET /api/modelos`: devuelve los modelos de vehiculo (requiere rol `ADMIN`).
+- `GET /api/modelos`: devuelve los modelos de vehículo (requiere rol `ADMIN`).
 - `GET /api/servicios-paquetes`: devuelve paquetes de servicios con modelo y productos (requiere rol `ADMIN`).
 - `GET /api/:slug/kits`: kits y precios del cliente autenticado.
 - `GET /api/:slug/servicios`: servicios y precios del cliente autenticado.

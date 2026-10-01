@@ -30,7 +30,7 @@ export function requireRequestedClient(request, response, next) {
   const matchesId = requestedId !== null && requestedId === Number(context.client?.id);
   const matchesSlug = requestedSlug && requestedSlug === context.client?.slug;
   if (!matchesId && !matchesSlug) {
-    return next(new AppError(403, 'No tienes acceso a la informacion de este cliente', 'CLIENT_ACCESS_DENIED'));
+    return next(new AppError(403, 'No tienes acceso a la información de este cliente', 'CLIENT_ACCESS_DENIED'));
   }
   next();
 }

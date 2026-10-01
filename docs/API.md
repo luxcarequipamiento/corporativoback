@@ -2,29 +2,29 @@
 
 Base local: `http://localhost:3001/api`
 
-## Autenticacion en Postman
+## Autenticación en Postman
 
 1. Ejecutar `POST /auth/login` con body JSON:
 
 ```json
 {
   "email": "empresaford@luxcarequipamiento.pe",
-  "password": "CONTRASENA_DEL_USUARIO"
+  "password": "CONTRASEÑA_DEL_USUARIO"
 }
 ```
 
 2. Copiar `session.access_token` de la respuesta.
 3. En las peticiones protegidas usar Authorization > Bearer Token.
 
-El login y la renovacion son operaciones preexistentes necesarias para Supabase Auth. Los recursos de datos implementados en esta fase son solo GET.
+El login y la renovación son operaciones preexistentes necesarias para Supabase Auth. Los recursos de datos implementados en esta fase son solo GET.
 
-## Sesion y salud
+## Sesión y salud
 
-| Metodo | Ruta | JWT | Acceso | Respuesta |
+| Método | Ruta | JWT | Acceso | Respuesta |
 |---|---|---:|---|---|
-| GET | `/health` | No | Publico | Estado del backend |
-| GET | `/health/database` | No | Publico | Estado de conexion Supabase |
-| GET | `/auth/me` | Si | CLIENTE/ADMIN | Usuario, aplicacion, rol y cliente derivado del JWT |
+| GET | `/health` | No | Público | Estado del backend |
+| GET | `/health/database` | No | Público | Estado de conexión Supabase |
+| GET | `/auth/me` | Sí | CLIENTE/ADMIN | Usuario, aplicación, rol y cliente derivado del JWT |
 
 ## Consultas administrativas
 
@@ -55,7 +55,7 @@ Los endpoints administrativos de productos y kits incluyen `precio_real`. Nunca 
 
 Requieren JWT. Un `CLIENTE` solo puede consultar su propio `idCliente` o `slug`; `ADMIN` puede consultar cualquier cliente.
 
-| Metodo | Ruta | Respuesta |
+| Método | Ruta | Respuesta |
 |---|---|---|
 | GET | `/clientes/:idCliente/productos` | Productos activos y `precio_venta` |
 | GET | `/clientes/:idCliente/accesorios` | Productos activos tipo `ACC` |
@@ -71,15 +71,15 @@ Requieren JWT. Un `CLIENTE` solo puede consultar su propio `idCliente` o `slug`;
 | GET | `/clientes/slug/:slug/kits` | Kits del cliente identificado por slug |
 | GET | `/clientes/slug/:slug/kits/:idKit` | Kit autorizado identificado por slug |
 
-El `slug` identifica el recurso, pero no autoriza. La autorizacion siempre se deriva del JWT y `lc_usuario_cliente`.
+El `slug` identifica el recurso, pero no autoriza. La autorización siempre se deriva del JWT y `lc_usuario_cliente`.
 
 ## Portal corporativo
 
 Requieren JWT con rol `CLIENTE`. No reciben cliente, id ni slug para decidir el acceso.
 
-| Metodo | Ruta | Respuesta |
+| Método | Ruta | Respuesta |
 |---|---|---|
-| GET | `/corporativo/me` | Perfil, cliente, aplicacion y rol |
+| GET | `/corporativo/me` | Perfil, cliente, aplicación y rol |
 | GET | `/corporativo/productos` | Productos activos del cliente autenticado |
 | GET | `/corporativo/accesorios` | Accesorios `ACC` del cliente autenticado |
 | GET | `/corporativo/servicios` | Servicios `SER` del cliente autenticado |
@@ -94,7 +94,7 @@ Ninguna respuesta corporativa contiene `precio_real`.
 
 Estas son las rutas principales consumidas por el frontend. Requieren JWT con rol `CLIENTE`:
 
-| Metodo | Ruta | Ejemplo |
+| Método | Ruta | Ejemplo |
 |---|---|---|
 | GET | `/:slug/kits` | `/ford/kits` |
 | GET | `/:slug/servicios` | `/ford/servicios` |
@@ -107,8 +107,8 @@ El slug se obtiene de `lc_cliente.slug` durante el login. Antes de cada consulta
 ## Estados HTTP
 
 - `200`: consulta correcta.
-- `400`: parametro invalido.
-- `401`: JWT ausente, invalido o vencido.
+- `400`: parámetro inválido.
+- `401`: JWT ausente, inválido o vencido.
 - `403`: rol o cliente no autorizado.
 - `404`: recurso inexistente o no disponible para el cliente.
 - `500`: error interno o de Supabase, sin stack ni secretos en la respuesta.

@@ -13,7 +13,7 @@ export async function requireAuth(request, response, next) {
 
     const { data, error } = await supabase.auth.getUser(token);
     if (error || !data.user) {
-      throw new AppError(401, 'Token invalido o vencido', 'INVALID_TOKEN');
+      throw new AppError(401, 'Token inválido o vencido', 'INVALID_TOKEN');
     }
 
     request.accessToken = token;
