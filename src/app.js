@@ -8,6 +8,7 @@ import { catalogRouter } from './routes/catalog.routes.js';
 import { clientsRouter } from './routes/clients.routes.js';
 import { corporateRouter } from './routes/corporate.routes.js';
 import { healthRouter } from './routes/health.routes.js';
+import { messagingRouter } from './routes/messaging.routes.js';
 import { slugCatalogRouter } from './routes/slug-catalog.routes.js';
 
 export const app = express();
@@ -52,6 +53,7 @@ app.use('/api/kits-clientes', simpleAdminRouter('kitsClientes'));
 app.use('/api/servicios-paquetes', servicePackagesRouter);
 app.use('/api/servicios-paquetes-productos', simpleAdminRouter('serviciosPaquetesProductos'));
 app.use('/api/corporativo', corporateRouter);
+app.use('/api/mensajeria', messagingRouter);
 
 // Debe permanecer después de las rutas estáticas para no capturar /auth, /kits, etc.
 app.use('/api/:slug', slugCatalogRouter);
