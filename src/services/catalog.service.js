@@ -17,7 +17,7 @@ async function activeRowsByIds(table, idColumn, ids) {
 
 export async function getClientProducts(clientId, typeCode = null) {
   await requireActiveClient(clientId);
-  const links = (await findMany('lc_producto_cliente', { filters: { id_cliente: clientId } })).filter(isActive);
+  const links = (await findMany('lc_producto_cliente', { filters: { id_cliente: clientId } })).filter(isActive).sort((a, b) => (a.orden || 0) - (b.orden || 0));
   const products = await activeRowsByIds('lc_producto', 'id_producto', links.map((item) => item.id_producto));
   const types = await activeRowsByIds('lc_tipo_producto', 'id_tipo_producto', products.map((item) => item.id_tipo_producto));
   const models = await activeRowsByIds('lc_modelo', 'id_modelo', products.map((item) => item.id_modelo));
@@ -46,7 +46,9 @@ export async function getClientProducts(clientId, typeCode = null) {
         codigo_modelo: modelsById.get(product.id_modelo).codigo_modelo,
         nombre_modelo: modelsById.get(product.id_modelo).nombre_modelo
       } : null,
-      precio_venta: link.precio_venta
+      precio_venta: link.precio_venta,
+      moneda: link.moneda || 'PEN',
+      orden: link.orden ?? 0
     }];
   });
 }
@@ -107,6 +109,8 @@ export async function getClientKits(clientId) {
       descripcion: kit.descripcion,
       imagen_url: kit.imagen_url,
       precio_venta: link.precio_venta,
+      moneda: link.moneda || 'PEN',
+      orden: link.orden ?? 0,
       productos: components
     }];
   });
@@ -118,6 +122,7 @@ export async function getClientKit(clientId, kitId) {
 }
 
 export async function getClientServicePackages(clientId) {
+  await requireActiveClient(clientId);
   const clientProducts = await getClientProducts(clientId);
   const clientProductsById = new Map(clientProducts.map((item) => [item.id_producto, item]));
   const packages = (await findMany('lc_servicio_paquete')).filter(isActive);

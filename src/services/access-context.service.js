@@ -50,6 +50,7 @@ export async function resolveAccessContext(authUser) {
     user: {
       id: user.id_usuario,
       username: user.username,
+      nombre_usuario: user.nombre,
       nombre: [user.nombre, user.apellido].filter(Boolean).join(' '),
       correo: user.correo
     },

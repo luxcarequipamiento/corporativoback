@@ -69,28 +69,29 @@ function validateFileMetadata(value) {
   return { name, mimeType, size };
 }
 
-async function findConversationByClient(clientId) {
+async function findConversationByUser(clientId, userId) {
   const { data, error } = await supabase
     .from('lc_conversacion')
     .select('*')
     .eq('id_cliente', clientId)
+    .eq('id_usuario', userId)
     .maybeSingle();
   assertDatabaseResult(error, 'No fue posible consultar la conversación');
   return data;
 }
 
-async function createClientConversation(clientId) {
-  const existing = await findConversationByClient(clientId);
+async function createClientConversation(clientId, userId) {
+  const existing = await findConversationByUser(clientId, userId);
   if (existing) return existing;
 
   const { data, error } = await supabase
     .from('lc_conversacion')
-    .insert({ id_cliente: clientId })
+    .insert({ id_cliente: clientId, id_usuario: userId })
     .select('*')
     .single();
 
   if (!error) return data;
-  if (error.code === '23505') return findConversationByClient(clientId);
+  if (error.code === '23505') return findConversationByUser(clientId, userId);
   assertDatabaseResult(error, 'No fue posible crear la conversación');
   return null;
 }
@@ -104,7 +105,10 @@ async function requireConversationAccess(context, conversationId) {
     .maybeSingle();
   assertDatabaseResult(error, 'No fue posible consultar la conversación');
   if (!data) throw new AppError(404, 'Conversación no encontrada', 'CONVERSATION_NOT_FOUND');
-  if (context.role.codigo !== 'ADMIN' && Number(data.id_cliente) !== Number(context.client?.id)) {
+  if (context.role.codigo !== 'ADMIN' && (
+    Number(data.id_cliente) !== Number(context.client?.id)
+    || Number(data.id_usuario) !== Number(context.user.id)
+  )) {
     throw new AppError(403, 'No tienes acceso a esta conversación', 'CONVERSATION_ACCESS_DENIED');
   }
   return data;
@@ -313,6 +317,7 @@ async function conversationPayload(context, conversation, shouldMarkRead = true)
     conversation: {
       id: conversation.id_conversacion,
       clientId: conversation.id_cliente,
+      userId: conversation.id_usuario,
       status: conversation.estado,
       lastMessageAt: conversation.fecha_ultimo_mensaje
     },
@@ -382,23 +387,24 @@ async function getClientRecord(clientId) {
 }
 
 export async function getClientConversation(context) {
-  const conversation = await findConversationByClient(context.client.id);
+  const conversation = await findConversationByUser(context.client.id, context.user.id);
   if (!conversation) return { conversation: null, messages: [] };
   return conversationPayload(context, conversation);
 }
 
 export async function prepareClientFileUpload(context, file) {
-  const conversation = await createClientConversation(context.client.id);
+  const conversation = await createClientConversation(context.client.id, context.user.id);
   return createUploadAuthorization(conversation, file);
 }
 
 export async function sendClientMessage(context, text, file) {
-  const conversation = await createClientConversation(context.client.id);
+  const conversation = await createClientConversation(context.client.id, context.user.id);
   const message = await insertMessage(context, conversation, text, file);
   return {
     conversation: {
       id: conversation.id_conversacion,
       clientId: conversation.id_cliente,
+      userId: conversation.id_usuario,
       status: conversation.estado
     },
     message
@@ -416,7 +422,7 @@ export async function listAdminConversations(context) {
   const conversationIds = conversations.map((item) => item.id_conversacion);
   const clientIds = conversations.map((item) => item.id_cliente);
 
-  const [messagesResult, clientsResult, readsResult, linksResult] = await Promise.all([
+  const [messagesResult, clientsResult, readsResult] = await Promise.all([
     supabase
       .from('lc_mensaje')
       .select('id_mensaje,id_conversacion,id_usuario_remitente,contenido,tipo,fecha_creacion')
@@ -431,19 +437,13 @@ export async function listAdminConversations(context) {
       .from('lc_conversacion_lectura')
       .select('*')
       .in('id_conversacion', conversationIds)
-      .eq('id_usuario', context.user.id),
-    supabase
-      .from('lc_usuario_cliente')
-      .select('id_cliente,id_usuario')
-      .in('id_cliente', clientIds)
-      .eq('activo', true)
+      .eq('id_usuario', context.user.id)
   ]);
   assertDatabaseResult(messagesResult.error, 'No fue posible consultar los mensajes');
   assertDatabaseResult(clientsResult.error, 'No fue posible consultar los clientes');
   assertDatabaseResult(readsResult.error, 'No fue posible consultar los estados de lectura');
-  assertDatabaseResult(linksResult.error, 'No fue posible consultar los contactos');
 
-  const contactUserIds = [...new Set((linksResult.data || []).map((link) => link.id_usuario))];
+  const contactUserIds = [...new Set(conversations.map((conversation) => conversation.id_usuario).filter(Boolean))];
   let contactUsers = [];
   if (contactUserIds.length) {
     const usersResult = await supabase
@@ -456,10 +456,6 @@ export async function listAdminConversations(context) {
 
   const clientsById = new Map((clientsResult.data || []).map((client) => [client.id_cliente, client]));
   const usersById = new Map(contactUsers.map((user) => [user.id_usuario, user]));
-  const contactByClient = new Map();
-  (linksResult.data || []).forEach((link) => {
-    if (!contactByClient.has(link.id_cliente)) contactByClient.set(link.id_cliente, usersById.get(link.id_usuario));
-  });
   const readByConversation = new Map((readsResult.data || []).map((read) => [read.id_conversacion, Number(read.id_ultimo_mensaje_leido || 0)]));
   const messagesByConversation = new Map();
   (messagesResult.data || []).forEach((message) => {
@@ -472,7 +468,7 @@ export async function listAdminConversations(context) {
     const messages = messagesByConversation.get(conversation.id_conversacion) || [];
     if (!messages.length) return [];
     const client = clientsById.get(conversation.id_cliente);
-    const contact = contactByClient.get(conversation.id_cliente);
+    const contact = usersById.get(conversation.id_usuario);
     const latest = messages[messages.length - 1];
     const lastRead = readByConversation.get(conversation.id_conversacion) || 0;
     const unread = messages.filter((message) => (
@@ -486,7 +482,8 @@ export async function listAdminConversations(context) {
       id: conversation.id_conversacion,
       company,
       slug: client?.slug || null,
-      contact: [contact?.nombre, contact?.apellido].filter(Boolean).join(' ') || contact?.username || 'Contacto corporativo',
+      contact: [contact?.nombre, contact?.apellido].filter(Boolean).join(' ') || contact?.username || 'Historial compartido anterior',
+      userId: conversation.id_usuario,
       initials,
       color: client?.color_primario || '#596675',
       logoUrl: client?.logo_url || null,

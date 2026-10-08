@@ -26,7 +26,7 @@ authRouter.post('/login', async (request, response, next) => {
         refresh_token: data.session.refresh_token,
         expires_at: data.session.expires_at
       },
-      usuario: context.authUser,
+      usuario: { ...context.authUser, nombre: context.user.nombre_usuario, nombre_completo: context.user.nombre },
       rol: context.role.codigo,
       cliente: context.client
     });
@@ -60,7 +60,8 @@ authRouter.get('/me', requireAuth, async (request, response, next) => {
       usuario: {
         id_usuario: context.user.id,
         username: context.user.username,
-        nombre: context.user.nombre,
+        nombre: context.user.nombre_usuario,
+        nombre_completo: context.user.nombre,
         correo: context.user.correo
       },
       aplicacion: context.application.codigo,

@@ -30,3 +30,15 @@ Las rutas protegidas requieren `Authorization: Bearer <access_token>`. El client
 La clave `SUPABASE_SERVICE_ROLE_KEY` nunca debe enviarse al navegador ni guardarse en el repositorio.
 
 La referencia completa de endpoints, relaciones, permisos y pruebas con Postman se encuentra en [`docs/API.md`](docs/API.md).
+
+## Chats individuales por usuario
+
+Antes de desplegar el backend actualizado, ejecutar en Supabase SQL Editor el archivo `migrations/20261005_mensajeria_por_usuario.sql`. Luego desplegar backend y frontend juntos. La migracion agrega `lc_conversacion.id_usuario`, reemplaza la unicidad por cliente por `(id_cliente, id_usuario)` y restringe el acceso directo a conversaciones, mensajes y archivos.
+
+Cada usuario autenticado consulta y envia mensajes solo en su propia conversacion, aunque otros usuarios pertenezcan al mismo cliente. El administrador ve una conversacion por persona. Los historiales anteriores se recuperan solo si su propietario es inequivoco; los demas conservan sus mensajes y quedan disponibles solo para administradores.
+
+Verificacion local: `node --test tests/messaging-isolation.test.js`. Tras aplicar el SQL y desplegar, iniciar sesion con dos usuarios del mismo cliente, enviar un mensaje desde cada uno y comprobar que cada cuenta ve solo su chat y que el administrador ve ambas conversaciones por separado.
+
+## Cat�logo Chevrolet del Excel
+
+Importaci�n directa a Supabase: ejecutar el SQL completo de scripts/cargar-catalogo-chevrolet-supabase.sql. Agrega los 121 conceptos y sus precios por modelo en las tablas existentes. El backend actualizado consulta estos datos desde Supabase. Instrucciones y pruebas: [docs/CATALOGO-CHEVROLET.md](docs/CATALOGO-CHEVROLET.md).

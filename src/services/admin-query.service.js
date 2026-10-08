@@ -9,9 +9,9 @@ const SIMPLE_ENTITIES = {
   modelos: { table: 'lc_modelo', id: 'id_modelo', fields: ['id_modelo', 'codigo_modelo', 'nombre_modelo'] },
   usuariosClientes: { table: 'lc_usuario_cliente', id: 'id_usuario_cliente', fields: ['id_usuario_cliente', 'id_usuario', 'id_cliente', 'activo'] },
   usuariosAplicaciones: { table: 'lc_usuario_aplicacion', id: 'id_usuario_aplicacion', fields: ['id_usuario_aplicacion', 'id_usuario', 'id_aplicacion', 'id_rol', 'activo'] },
-  productosClientes: { table: 'lc_producto_cliente', id: 'id_producto_cliente', fields: ['id_producto_cliente', 'id_producto', 'id_cliente', 'precio_venta', 'activo'] },
+  productosClientes: { table: 'lc_producto_cliente', id: 'id_producto_cliente', fields: ['id_producto_cliente', 'id_producto', 'id_cliente', 'precio_venta', 'moneda', 'orden', 'activo'] },
   kitsProductos: { table: 'lc_kit_producto', id: 'id_kit_producto', fields: ['id_kit_producto', 'id_kit', 'id_producto', 'id_modelo', 'cantidad', 'orden', 'activo'] },
-  kitsClientes: { table: 'lc_kit_cliente', id: 'id_kit_cliente', fields: ['id_kit_cliente', 'id_kit', 'id_cliente', 'precio_venta', 'activo'] },
+  kitsClientes: { table: 'lc_kit_cliente', id: 'id_kit_cliente', fields: ['id_kit_cliente', 'id_kit', 'id_cliente', 'precio_venta', 'moneda', 'orden', 'activo'] },
   serviciosPaquetesProductos: { table: 'lc_servicio_paquete_producto', id: 'id_servicio_paquete_producto', fields: ['id_servicio_paquete_producto', 'id_servicio_paquete', 'id_producto', 'cantidad', 'orden', 'activo'] }
 };
 
@@ -112,6 +112,8 @@ export async function listProducts() {
     clientes: links.filter((link) => link.id_producto === product.id_producto).map((link) => ({
       cliente: pick(clientsById.get(link.id_cliente), ['id_cliente', 'codigo', 'nombre', 'slug']),
       precio_venta: link.precio_venta,
+      moneda: link.moneda || 'PEN',
+      orden: link.orden ?? 0,
       activo: link.activo
     }))
   }));
@@ -161,6 +163,8 @@ export async function listKits() {
     clientes: kitClients.filter((link) => link.id_kit === kit.id_kit).map((link) => ({
       cliente: pick(clientsById.get(link.id_cliente), ['id_cliente', 'codigo', 'nombre', 'slug']),
       precio_venta: link.precio_venta,
+      moneda: link.moneda || 'PEN',
+      orden: link.orden ?? 0,
       activo: link.activo
     }))
   }));

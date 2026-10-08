@@ -1,0 +1,1643 @@
+{
+    "sheet":  "xl/worksheets/sheet1.xml",
+    "merged":  [
+                   null
+               ],
+    "rows":  [
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B4",
+                                       "value":  "COLORADO WT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C4",
+                                       "value":  "PRECIO $",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E4",
+                                       "value":  "SILVERADO",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F4",
+                                       "value":  "PRECIO $",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H4",
+                                       "value":  "N-400",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I4",
+                                       "value":  "PRECIO $",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "K4",
+                                       "value":  "GROOVE",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L4",
+                                       "value":  "PRECIO $",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "N4",
+                                       "value":  "TRACKER",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O4",
+                                       "value":  "PRECIO $",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Q4",
+                                       "value":  "CAPTIVA",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R4",
+                                       "value":  "PRECIO $",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "T4",
+                                       "value":  "TRAVERSE",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "U4",
+                                       "value":  "PRECIO $",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "W4",
+                                       "value":  "SAIL",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X4",
+                                       "value":  "PRECIO $",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Z4",
+                                       "value":  "TAHOE",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AA4",
+                                       "value":  "PRECIO $",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AC4",
+                                       "value":  "SUBURBAN",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AD4",
+                                       "value":  "PRECIO $",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  4
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B5",
+                                       "value":  "Antivuelco de Metal Hammer",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C5",
+                                       "value":  "719.69696969696975",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E5",
+                                       "value":  "Antivuelco de Metal Hammer",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F5",
+                                       "value":  "719.69696969696975",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H5",
+                                       "value":  "Correlluvias",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I5",
+                                       "value":  "132.57575757575759",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "K5",
+                                       "value":  "Correlluvias",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L5",
+                                       "value":  "64.393939393939391",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "N5",
+                                       "value":  "Correlluvias",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O5",
+                                       "value":  "64.393939393939391",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Q5",
+                                       "value":  "Correlluvias",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R5",
+                                       "value":  "64.393939393939391",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "T5",
+                                       "value":  "Correlluvias",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "U5",
+                                       "value":  "132.57575757575759",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "W5",
+                                       "value":  "Correlluvias",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X5",
+                                       "value":  "64.393939393939391",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Z5",
+                                       "value":  "Correlluvias",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AA5",
+                                       "value":  "132.57575757575759",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AC5",
+                                       "value":  "Correlluvias",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AD5",
+                                       "value":  "132.57575757575759",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  5
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B6",
+                                       "value":  "Antivuelco Acerado Hammer",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C6",
+                                       "value":  "871.21212121212125",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E6",
+                                       "value":  "Antivuelco Acerado Hammer",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F6",
+                                       "value":  "871.21212121212125",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H6",
+                                       "value":  "Defensa Delantera de Un Tubo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I6",
+                                       "value":  "397.72727272727275",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "K6",
+                                       "value":  "Portaequipaje de 450 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L6",
+                                       "value":  "454.54545454545456",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "N6",
+                                       "value":  "Portaequipaje de 450 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O6",
+                                       "value":  "454.54545454545456",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Q6",
+                                       "value":  "Portaequipaje de 450 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R6",
+                                       "value":  "454.54545454545456",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "T6",
+                                       "value":  "Tapizado de Asientos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "U6",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "W6",
+                                       "value":  "Portaequipaje de 450 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X6",
+                                       "value":  "454.54545454545456",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Z6",
+                                       "value":  "Tapizado de Asientos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AA6",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AC6",
+                                       "value":  "Tapizado de Asientos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AD6",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  6
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B7",
+                                       "value":  "Antivuelco con Parrilla Hammer",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C7",
+                                       "value":  "1098.4848484848485",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E7",
+                                       "value":  "Antivuelco con Parrilla Hammer",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F7",
+                                       "value":  "1098.4848484848485",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H7",
+                                       "value":  "Defensa Delantera de Dos Tubos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I7",
+                                       "value":  "492.42424242424244",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "K7",
+                                       "value":  "Portaequipaje de 500 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L7",
+                                       "value":  "568.18181818181824",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "N7",
+                                       "value":  "Portaequipaje de 500 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O7",
+                                       "value":  "568.18181818181824",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Q7",
+                                       "value":  "Portaequipaje de 500 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R7",
+                                       "value":  "568.18181818181824",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "T7",
+                                       "value":  "Tapizado de Techo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "U7",
+                                       "value":  "265.15151515151518",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "W7",
+                                       "value":  "Portaequipaje de 500 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X7",
+                                       "value":  "568.18181818181824",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Z7",
+                                       "value":  "Tapizado de Techo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AA7",
+                                       "value":  "321.969696969697",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AC7",
+                                       "value":  "Tapizado de Techo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AD7",
+                                       "value":  "416.66666666666669",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  7
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B8",
+                                       "value":  "Antivuelco Z-Metal",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C8",
+                                       "value":  "359.84848484848487",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E8",
+                                       "value":  "Antivuelco Metralleta",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F8",
+                                       "value":  "1098.4848484848485",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H8",
+                                       "value":  "Escalera de Acero",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I8",
+                                       "value":  "359.84848484848487",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "K8",
+                                       "value":  "Portaequipaje de 600 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L8",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "N8",
+                                       "value":  "Portaequipaje de 600 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O8",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Q8",
+                                       "value":  "Portaequipaje de 600 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R8",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "T8",
+                                       "value":  "Tapizado de Piso",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "U8",
+                                       "value":  "246.21212121212122",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "W8",
+                                       "value":  "Portaequipaje de 600 LT",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X8",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Z8",
+                                       "value":  "Tapizado de Piso",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AA8",
+                                       "value":  "246.21212121212122",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AC8",
+                                       "value":  "Tapizado de Piso",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AD8",
+                                       "value":  "303.03030303030306",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  8
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B9",
+                                       "value":  "Antivuelvo Z-Acerado",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C9",
+                                       "value":  "416.66666666666669",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E9",
+                                       "value":  "Antivuelvo Megalodon",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F9",
+                                       "value":  "1212.1212121212122",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H9",
+                                       "value":  "Estribos de Acero",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I9",
+                                       "value":  "321.969696969697",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "K9",
+                                       "value":  "Tapizado de Asientos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L9",
+                                       "value":  "340.90909090909093",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "N9",
+                                       "value":  "Tapizado de Asientos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O9",
+                                       "value":  "340.90909090909093",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Q9",
+                                       "value":  "Tapizado de Asientos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R9",
+                                       "value":  "340.90909090909093",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "T9",
+                                       "value":  "Polarizado en Nanocerámico 3M",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "U9",
+                                       "value":  "568.18181818181824",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "W9",
+                                       "value":  "Tapizado de Asientos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X9",
+                                       "value":  "340.90909090909093",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Z9",
+                                       "value":  "Polarizado en Nanocerámico 3M",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AA9",
+                                       "value":  "568.18181818181824",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AC9",
+                                       "value":  "Polarizado en Nanocerámico 3M",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AD9",
+                                       "value":  "681.81818181818198",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  9
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B10",
+                                       "value":  "Antivuelco Metralleta",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C10",
+                                       "value":  "1098.4848484848485",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E10",
+                                       "value":  "Aros Black Rhino",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F10",
+                                       "value":  "1628.787878787879",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H10",
+                                       "value":  "Neblineros Forse de Dos Unidades",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I10",
+                                       "value":  "321.969696969697",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "K10",
+                                       "value":  "Tapizado de Techo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L10",
+                                       "value":  "189.39393939393941",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "N10",
+                                       "value":  "Tapizado de Techo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O10",
+                                       "value":  "189.39393939393941",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Q10",
+                                       "value":  "Tapizado de Techo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R10",
+                                       "value":  "189.39393939393941",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "T10",
+                                       "value":  "Undercoating",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "U10",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "W10",
+                                       "value":  "Tapizado de Techo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X10",
+                                       "value":  "189.39393939393941",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Z10",
+                                       "value":  "Undercoating",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AA10",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AC10",
+                                       "value":  "Undercoating",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AD10",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  10
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B11",
+                                       "value":  "Antivuelvo Megalodon",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C11",
+                                       "value":  "1212.1212121212122",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E11",
+                                       "value":  "Barra Led",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F11",
+                                       "value":  "454.54545454545456",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H11",
+                                       "value":  "Neblineros Forse de Cuatro Unidades",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I11",
+                                       "value":  "606.06060606060612",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "K11",
+                                       "value":  "Tapizado de Piso",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L11",
+                                       "value":  "170.45454545454547",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "N11",
+                                       "value":  "Tapizado de Piso",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O11",
+                                       "value":  "170.45454545454547",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Q11",
+                                       "value":  "Tapizado de Piso",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R11",
+                                       "value":  "170.45454545454547",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "W11",
+                                       "value":  "Tapizado de Piso",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X11",
+                                       "value":  "170.45454545454547",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  11
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B12",
+                                       "value":  "Aros Black Rhino",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C12",
+                                       "value":  "1742.4242424242425",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E12",
+                                       "value":  "Correlluvias",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F12",
+                                       "value":  "132.57575757575759",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H12",
+                                       "value":  "Parrilla de Techo Off Road",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I12",
+                                       "value":  "757.57575757575762",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "K12",
+                                       "value":  "Polarizado en Nanocerámico 3M",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L12",
+                                       "value":  "359.84848484848487",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "N12",
+                                       "value":  "Polarizado en Nanocerámico 3M",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O12",
+                                       "value":  "359.84848484848487",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Q12",
+                                       "value":  "Polarizado en Nanocerámico 3M",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R12",
+                                       "value":  "359.84848484848487",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "W12",
+                                       "value":  "Polarizado en Nanocerámico 3M",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X12",
+                                       "value":  "359.84848484848487",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  12
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B13",
+                                       "value":  "Barras Traversales",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C13",
+                                       "value":  "208.33333333333334",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E13",
+                                       "value":  "Estribos de Metal",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F13",
+                                       "value":  "719.69696969696975",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H13",
+                                       "value":  "Tapizado de Asientos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I13",
+                                       "value":  "416.66666666666669",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "K13",
+                                       "value":  "Undercoating",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L13",
+                                       "value":  "492.42424242424244",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "N13",
+                                       "value":  "Undercoating",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O13",
+                                       "value":  "492.42424242424244",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "Q13",
+                                       "value":  "Undercoating",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R13",
+                                       "value":  "492.42424242424244",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "W13",
+                                       "value":  "Undercoating",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X13",
+                                       "value":  "492.42424242424244",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  13
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B14",
+                                       "value":  "Barra Led",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C14",
+                                       "value":  "454.54545454545456",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E14",
+                                       "value":  "Fenders Lisos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F14",
+                                       "value":  "643.93939393939399",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H14",
+                                       "value":  "Tapizado de Techo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I14",
+                                       "value":  "246.21212121212122",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  14
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B15",
+                                       "value":  "Correlluvias",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C15",
+                                       "value":  "64.393939393939391",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E15",
+                                       "value":  "Llantas Mickey Thompson",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F15",
+                                       "value":  "2234.848484848485",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H15",
+                                       "value":  "Tapizado de Piso",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I15",
+                                       "value":  "246.21212121212122",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  15
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B16",
+                                       "value":  "Defensa Delantera de Un Tubo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C16",
+                                       "value":  "397.72727272727275",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E16",
+                                       "value":  "Neblineros Forse de Dos Unidades",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F16",
+                                       "value":  "321.969696969697",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H16",
+                                       "value":  "Polarizado en Nanocerámico 3M",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I16",
+                                       "value":  "454.54545454545456",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  16
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B17",
+                                       "value":  "Defensa Delantera de Dos Tubos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C17",
+                                       "value":  "492.42424242424244",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E17",
+                                       "value":  "Neblineros Forse de Cuatro Unidades",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F17",
+                                       "value":  "606.06060606060612",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "H17",
+                                       "value":  "Undercoating",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I17",
+                                       "value":  "568.18181818181824",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  17
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B18",
+                                       "value":  "Estribos de Acero",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C18",
+                                       "value":  "321.969696969697",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E18",
+                                       "value":  "Parrilla de Techo Off Road",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F18",
+                                       "value":  "909.09090909090912",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  18
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B19",
+                                       "value":  "Estribos de Metal",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C19",
+                                       "value":  "511.36363636363637",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E19",
+                                       "value":  "Portaneblineros",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F19",
+                                       "value":  "321.969696969697",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  19
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B20",
+                                       "value":  "Fenders Lisos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C20",
+                                       "value":  "359.84848484848487",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E20",
+                                       "value":  "Tapa Retráctil Manual",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F20",
+                                       "value":  "1628.787878787879",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  20
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B21",
+                                       "value":  "Fenders Empernados",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C21",
+                                       "value":  "416.66666666666669",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E21",
+                                       "value":  "Tapa Retráctil Eléctrica",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F21",
+                                       "value":  "2121.2121212121215",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  21
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B22",
+                                       "value":  "Lona Marítima Keko",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C22",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E22",
+                                       "value":  "Tapizado de Asientos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F22",
+                                       "value":  "416.66666666666669",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  22
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B23",
+                                       "value":  "Llantas Mickey Thompson",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C23",
+                                       "value":  "1590.909090909091",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E23",
+                                       "value":  "Tapizado de Techo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F23",
+                                       "value":  "246.21212121212122",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  23
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B24",
+                                       "value":  "Moldura de Capot",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C24",
+                                       "value":  "265.15151515151518",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E24",
+                                       "value":  "Tapizado de Piso",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F24",
+                                       "value":  "246.21212121212122",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  24
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B25",
+                                       "value":  "Neblineros Forse de Dos Unidades",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C25",
+                                       "value":  "321.969696969697",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E25",
+                                       "value":  "Polarizado en Nanocerámico 3M",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F25",
+                                       "value":  "454.54545454545456",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  25
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B26",
+                                       "value":  "Neblineros Forse de Cuatro Unidades",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C26",
+                                       "value":  "606.06060606060612",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "E26",
+                                       "value":  "Undercoating",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F26",
+                                       "value":  "606.06060606060612",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  26
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B27",
+                                       "value":  "Portaneblineros",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C27",
+                                       "value":  "321.969696969697",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  27
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B28",
+                                       "value":  "Protector de Tolva",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C28",
+                                       "value":  "473.4848484848485",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  28
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B29",
+                                       "value":  "Parrilla de Techo Off Road",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C29",
+                                       "value":  "681.81818181818187",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  29
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B30",
+                                       "value":  "Tapa Retráctil Manual",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C30",
+                                       "value":  "1325.7575757575758",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  30
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B31",
+                                       "value":  "Tapa Retráctil Eléctrica",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C31",
+                                       "value":  "1628.787878787879",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  31
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B32",
+                                       "value":  "Tapizado de Asientos",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C32",
+                                       "value":  "340.90909090909093",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  32
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B33",
+                                       "value":  "Tapizado de Techo",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C33",
+                                       "value":  "189.39393939393941",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  33
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B34",
+                                       "value":  "Tapizado de Piso",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C34",
+                                       "value":  "170.45454545454547",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  34
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B35",
+                                       "value":  "Polarizado en Nanocerámico 3M",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C35",
+                                       "value":  "359.84848484848487",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  35
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "B36",
+                                       "value":  "Undercoating",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "C36",
+                                       "value":  "492.42424242424244",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  36
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "F39",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I39",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L39",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O39",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R39",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "U39",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X39",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AA39",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AD39",
+                                       "value":  "",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  39
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "C40",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F40",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I40",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L40",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O40",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R40",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "U40",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X40",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AA40",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AD40",
+                                       "value":  "",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  40
+                 },
+                 {
+                     "cells":  [
+                                   {
+                                       "cell":  "C44",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "F44",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "I44",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "L44",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "O44",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "R44",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "U44",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "X44",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AA44",
+                                       "value":  "",
+                                       "formula":  ""
+                                   },
+                                   {
+                                       "cell":  "AD44",
+                                       "value":  "",
+                                       "formula":  ""
+                                   }
+                               ],
+                     "row":  44
+                 }
+             ]
+}
