@@ -78,6 +78,10 @@ test('Chevrolet SQL executes against PostgreSQL and the backend reads the import
       const service = serviceFor(db);
       const products = await service.getClientProducts(1,'ACC');
       assert.equal(products.length,121);
+      const modelId = products[0].modelo.id_modelo;
+      const modelProducts = await service.getClientProducts(1, 'ACC', modelId);
+      assert.deepEqual(modelProducts, products.filter(product => product.modelo.id_modelo === modelId));
+      assert.ok(modelProducts.length < products.length);
       assert.ok(products.every((product) => product.id_producto!==1));
       const prices = catalogToPrices({productos:products});
       const first = prices.accessories.find((group) => group.name==='COLORADO WT').items[0];

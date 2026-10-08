@@ -24,7 +24,27 @@ function corporateCollection(loader) {
 }
 
 export const getCorporateProducts = corporateCollection((id) => getClientProducts(id));
-export const getCorporateAccessories = corporateCollection((id) => getClientProducts(id, 'ACC'));
+export async function getCorporateAccessories(request, response, next) {
+  try {
+    const unassigned = request.query.modelo === 'unassigned';
+    const modelId = request.query.modelo === undefined || unassigned ? null : parsePositiveId(request.query.modelo, 'modelo');
+    const products = await getClientProducts(request.accessContext.client.id, 'ACC', modelId);
+    response.json({ ok: true, data: unassigned ? products.filter(product => !product.modelo) : products });
+  } catch (error) { next(error); }
+}
+
+export async function getCorporateAccessoryModels(request, response, next) {
+  try {
+    const products = await getClientProducts(request.accessContext.client.id, 'ACC');
+    const models = new Map();
+    for (const product of products) {
+      const id = String(product.modelo?.id_modelo || 'unassigned');
+      if (!models.has(id)) models.set(id, { id, name: product.modelo?.nombre_modelo || 'Sin modelo asignado', count: 0 });
+      models.get(id).count += 1;
+    }
+    response.json({ ok: true, data: [...models.values()] });
+  } catch (error) { next(error); }
+}
 export const getCorporateServices = corporateCollection((id) => getClientProducts(id, 'SER'));
 export const getCorporateKits = corporateCollection((id) => getClientKits(id));
 export const getCorporateServicePackages = corporateCollection((id) => getClientServicePackages(id));

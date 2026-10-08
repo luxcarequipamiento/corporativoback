@@ -15,12 +15,17 @@ async function activeRowsByIds(table, idColumn, ids) {
   return rows.filter(isActive);
 }
 
-export async function getClientProducts(clientId, typeCode = null) {
+export async function getClientProducts(clientId, typeCode = null, modelId = null) {
   await requireActiveClient(clientId);
   const links = (await findMany('lc_producto_cliente', { filters: { id_cliente: clientId } })).filter(isActive).sort((a, b) => (a.orden || 0) - (b.orden || 0));
-  const products = await activeRowsByIds('lc_producto', 'id_producto', links.map((item) => item.id_producto));
-  const types = await activeRowsByIds('lc_tipo_producto', 'id_tipo_producto', products.map((item) => item.id_tipo_producto));
-  const models = await activeRowsByIds('lc_modelo', 'id_modelo', products.map((item) => item.id_modelo));
+  const productIds = links.map((item) => item.id_producto);
+  const products = modelId === null
+    ? await activeRowsByIds('lc_producto', 'id_producto', productIds)
+    : (await findMany('lc_producto', { inFilters: { id_producto: productIds }, filters: { id_modelo: modelId } })).filter(isActive);
+  const [types, models] = await Promise.all([
+    activeRowsByIds('lc_tipo_producto', 'id_tipo_producto', products.map((item) => item.id_tipo_producto)),
+    activeRowsByIds('lc_modelo', 'id_modelo', products.map((item) => item.id_modelo))
+  ]);
   const productsById = new Map(products.map((item) => [item.id_producto, item]));
   const typesById = new Map(types.map((item) => [item.id_tipo_producto, item]));
   const modelsById = new Map(models.map((item) => [item.id_modelo, item]));
