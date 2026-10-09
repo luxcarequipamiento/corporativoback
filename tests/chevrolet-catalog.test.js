@@ -8,7 +8,7 @@ import { isActive, unique } from '../src/utils/database.js';
 import { AppError } from '../src/middleware/errors.js';
 const sql = readFileSync(new URL('../scripts/cargar-catalogo-chevrolet-supabase.sql',import.meta.url),'utf8');
 const catalog = JSON.parse(readFileSync(new URL('../data/chevrolet-catalog.json',import.meta.url),'utf8'));
-const sheet = JSON.parse(readFileSync(new URL('../data/sheet1.source.json',import.meta.url),'utf8'));
+const sheet = JSON.parse(readFileSync(new URL('../data/sheet1.source.json',import.meta.url),'utf8').replace(/^\uFEFF/, ''));
 const sourceCell = (name) => sheet.rows.flatMap((row) => row.cells).find((cell) => cell.cell===name)?.value;
 
 const schema = `
@@ -38,14 +38,14 @@ test('Chevrolet SQL executes against PostgreSQL and the backend reads the import
   const db = new PGlite();
   try {
     await db.exec(schema);
-    await t.test('imports all 121 spreadsheet prices under 10 existing models',async () => {
+    await t.test('imports all 131 spreadsheet prices under 10 existing models',async () => {
       const [importStatement, summaryStatement] = sql.split('-- Resultado esperado:');
       await db.query(importStatement);
       const summary = await db.query('-- Resultado esperado:' + summaryStatement);
       assert.equal(summary.rows.length,10);
-      assert.equal(summary.rows.reduce((total,row) => total + Number(row.opciones),0),121);
+      assert.equal(summary.rows.reduce((total,row) => total + Number(row.opciones),0),131);
       const result = await db.query(`SELECT p.nombre,m.nombre_modelo,pc.precio_venta,pc.moneda,pc.orden FROM lc_producto_cliente pc JOIN lc_producto p USING(id_producto) JOIN lc_modelo m USING(id_modelo) WHERE pc.id_cliente=1 AND pc.activo=true`);
-      assert.equal(result.rows.length,121);
+      assert.equal(result.rows.length,131);
       assert.equal((await db.query('SELECT * FROM lc_modelo')).rows.length,11);
       for (const model of catalog.models) for (const item of model.items) {
         const imported = result.rows.find((row) => row.nombre_modelo===model.name && row.orden===item.sourceRow);
@@ -58,11 +58,11 @@ test('Chevrolet SQL executes against PostgreSQL and the backend reads the import
     await t.test('repeated import updates prices without duplicating rows or replacing real costs',async () => {
       await db.exec(`UPDATE lc_producto SET precio_real=80 WHERE codigo='CHEV-XLS-CWT-005'; UPDATE lc_producto_cliente SET precio_venta=999 WHERE id_producto=(SELECT id_producto FROM lc_producto WHERE codigo='CHEV-XLS-CWT-005');`);
       await db.exec(sql);
-      assert.equal((await db.query('SELECT * FROM lc_producto')).rows.length,122);
-      assert.equal((await db.query('SELECT * FROM lc_producto_cliente')).rows.length,123);
+      assert.equal((await db.query('SELECT * FROM lc_producto')).rows.length,132);
+      assert.equal((await db.query('SELECT * FROM lc_producto_cliente')).rows.length,133);
       const row = (await db.query(`SELECT p.precio_real,pc.precio_venta FROM lc_producto p JOIN lc_producto_cliente pc USING(id_producto) WHERE p.codigo='CHEV-XLS-CWT-005'`)).rows[0];
       assert.equal(Number(row.precio_real),80);
-      assert.equal(Number(row.precio_venta),719.7);
+      assert.equal(Number(row.precio_venta),748.48);
     });
     await t.test('only previous Chevrolet associations are disabled; Ford and shared products retain values',async () => {
       const old = (await db.query(`SELECT * FROM lc_producto_cliente WHERE id_producto=1 ORDER BY id_cliente`)).rows;
@@ -77,7 +77,8 @@ test('Chevrolet SQL executes against PostgreSQL and the backend reads the import
     await t.test('backend reads live database changes and preserves USD and source order for quotes',async () => {
       const service = serviceFor(db);
       const products = await service.getClientProducts(1,'ACC');
-      assert.equal(products.length,121);
+      assert.equal(products.length,71);
+      assert.equal((await service.getClientProducts(1,'SER')).length,60);
       const modelId = products[0].modelo.id_modelo;
       const modelProducts = await service.getClientProducts(1, 'ACC', modelId);
       assert.deepEqual(modelProducts, products.filter(product => product.modelo.id_modelo === modelId));
@@ -85,9 +86,9 @@ test('Chevrolet SQL executes against PostgreSQL and the backend reads the import
       assert.ok(products.every((product) => product.id_producto!==1));
       const prices = catalogToPrices({productos:products});
       const first = prices.accessories.find((group) => group.name==='COLORADO WT').items[0];
-      assert.equal(first.unitPrice,71970);
+      assert.equal(first.unitPrice,74848);
       assert.equal(first.currency,'USD');
-      assert.deepEqual(quoteTotals([{...first,quantity:2}]).totals,[{currency:'USD',amount:143940}]);
+      assert.deepEqual(quoteTotals([{...first,quantity:2}]).totals,[{currency:'USD',amount:149696}]);
       await db.exec(`UPDATE lc_producto_cliente SET precio_venta=700 WHERE id_producto=(SELECT id_producto FROM lc_producto WHERE codigo='CHEV-XLS-CWT-005')`);
       const updated = await service.getClientProducts(1,'ACC');
       assert.equal(Number(updated.find((product) => product.codigo==='CHEV-XLS-CWT-005').precio_venta),700);
@@ -97,11 +98,28 @@ test('Chevrolet SQL executes against PostgreSQL and the backend reads the import
       assert.equal(ford.length,1);
       assert.equal(ford[0].moneda,'PEN');
     });
+    await t.test('classification SQL separates services without changing prices and is repeatable', async () => {
+      const classification = readFileSync(new URL('../scripts/clasificar-accesorios-servicios.sql', import.meta.url), 'utf8');
+      const before = (await db.query('SELECT * FROM lc_producto_cliente ORDER BY id_producto_cliente')).rows;
+      await db.exec(classification);
+      const service = serviceFor(db);
+      const services = await service.getClientProducts(1, 'SER');
+      const accessories = await service.getClientProducts(1, 'ACC');
+      assert.ok(services.length > 0);
+      assert.equal(services.length + accessories.length, 131);
+      assert.ok(services.some(item => item.nombre.startsWith('Tapizado')));
+      assert.ok(services.some(item => item.nombre.includes('Nanocerámico')));
+      assert.ok(services.some(item => item.nombre === 'Undercoating'));
+      assert.ok(accessories.every(item => !/^(Tapiz|Polarizado|Undercoating|Tratamiento)/i.test(item.nombre)));
+      assert.deepEqual((await db.query('SELECT * FROM lc_producto_cliente ORDER BY id_producto_cliente')).rows, before);
+      await db.exec(classification);
+      assert.deepEqual(await service.getClientProducts(1, 'SER'), services);
+    });
     await t.test('invalid client rolls the SQL transaction back and remains blocked in the backend',async () => {
       await db.exec("UPDATE lc_cliente SET activo=false WHERE id_cliente=1;");
       await assert.rejects(db.exec(sql),/cliente activo/);
       await db.exec('ROLLBACK;');
-      assert.equal((await db.query('SELECT * FROM lc_producto')).rows.length,122);
+      assert.equal((await db.query('SELECT * FROM lc_producto')).rows.length,132);
       const service = serviceFor(db);
       await assert.rejects(service.getClientProducts(1),{status:404});
       await assert.rejects(service.getClientProducts(999),{status:404});

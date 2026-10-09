@@ -1,110 +1,107 @@
-{
+﻿{
     "sheet":  "xl/worksheets/sheet1.xml",
-    "merged":  [
-                   null
-               ],
     "rows":  [
                  {
                      "cells":  [
                                    {
                                        "cell":  "B4",
                                        "value":  "COLORADO WT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C4",
                                        "value":  "PRECIO $",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E4",
                                        "value":  "SILVERADO",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F4",
                                        "value":  "PRECIO $",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H4",
                                        "value":  "N-400",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I4",
                                        "value":  "PRECIO $",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "K4",
                                        "value":  "GROOVE",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L4",
                                        "value":  "PRECIO $",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "N4",
                                        "value":  "TRACKER",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O4",
                                        "value":  "PRECIO $",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Q4",
                                        "value":  "CAPTIVA",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R4",
                                        "value":  "PRECIO $",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "T4",
                                        "value":  "TRAVERSE",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "U4",
                                        "value":  "PRECIO $",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "W4",
                                        "value":  "SAIL",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X4",
                                        "value":  "PRECIO $",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Z4",
                                        "value":  "TAHOE",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AA4",
                                        "value":  "PRECIO $",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AC4",
                                        "value":  "SUBURBAN",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AD4",
                                        "value":  "PRECIO $",
-                                       "formula":  ""
+                                       "formula":  null
                                    }
                                ],
                      "row":  4
@@ -112,104 +109,134 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A5",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B5",
                                        "value":  "Antivuelco de Metal Hammer",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C5",
-                                       "value":  "719.69696969696975",
-                                       "formula":  ""
+                                       "value":  "748.4848484848485",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D5",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E5",
                                        "value":  "Antivuelco de Metal Hammer",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F5",
-                                       "value":  "719.69696969696975",
-                                       "formula":  ""
+                                       "value":  "748.4848484848485",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G5",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H5",
                                        "value":  "Correlluvias",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I5",
-                                       "value":  "132.57575757575759",
-                                       "formula":  ""
+                                       "value":  "137.87878787878788",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "J5",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "K5",
                                        "value":  "Correlluvias",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L5",
-                                       "value":  "64.393939393939391",
-                                       "formula":  ""
+                                       "value":  "66.969696969696969",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "M5",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "N5",
                                        "value":  "Correlluvias",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O5",
-                                       "value":  "64.393939393939391",
-                                       "formula":  ""
+                                       "value":  "66.969696969696969",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "P5",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Q5",
                                        "value":  "Correlluvias",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R5",
-                                       "value":  "64.393939393939391",
-                                       "formula":  ""
+                                       "value":  "66.969696969696969",
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "T5",
                                        "value":  "Correlluvias",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "U5",
-                                       "value":  "132.57575757575759",
-                                       "formula":  ""
+                                       "value":  "137.87878787878788",
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "W5",
                                        "value":  "Correlluvias",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X5",
-                                       "value":  "64.393939393939391",
-                                       "formula":  ""
+                                       "value":  "66.969696969696969",
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Z5",
                                        "value":  "Correlluvias",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AA5",
-                                       "value":  "132.57575757575759",
-                                       "formula":  ""
+                                       "value":  "137.87878787878788",
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AC5",
                                        "value":  "Correlluvias",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AD5",
-                                       "value":  "132.57575757575759",
-                                       "formula":  ""
+                                       "value":  "137.87878787878788",
+                                       "formula":  null
                                    }
                                ],
                      "row":  5
@@ -217,104 +244,149 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A6",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B6",
                                        "value":  "Antivuelco Acerado Hammer",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C6",
-                                       "value":  "871.21212121212125",
-                                       "formula":  ""
+                                       "value":  "906.06060606060612",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D6",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E6",
                                        "value":  "Antivuelco Acerado Hammer",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F6",
-                                       "value":  "871.21212121212125",
-                                       "formula":  ""
+                                       "value":  "906.06060606060612",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G6",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H6",
                                        "value":  "Defensa Delantera de Un Tubo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I6",
-                                       "value":  "397.72727272727275",
-                                       "formula":  ""
+                                       "value":  "413.63636363636368",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "J6",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "K6",
                                        "value":  "Portaequipaje de 450 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L6",
-                                       "value":  "454.54545454545456",
-                                       "formula":  ""
+                                       "value":  "472.72727272727275",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "M6",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "N6",
                                        "value":  "Portaequipaje de 450 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O6",
-                                       "value":  "454.54545454545456",
-                                       "formula":  ""
+                                       "value":  "472.72727272727275",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "P6",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Q6",
                                        "value":  "Portaequipaje de 450 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R6",
-                                       "value":  "454.54545454545456",
-                                       "formula":  ""
+                                       "value":  "472.72727272727275",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "S6",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "T6",
                                        "value":  "Tapizado de Asientos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "U6",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "W6",
                                        "value":  "Portaequipaje de 450 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X6",
-                                       "value":  "454.54545454545456",
-                                       "formula":  ""
+                                       "value":  "472.72727272727275",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "Y6",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Z6",
                                        "value":  "Tapizado de Asientos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AA6",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "AB6",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AC6",
                                        "value":  "Tapizado de Asientos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AD6",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
                                    }
                                ],
                      "row":  6
@@ -322,104 +394,149 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A7",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B7",
                                        "value":  "Antivuelco con Parrilla Hammer",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C7",
-                                       "value":  "1098.4848484848485",
-                                       "formula":  ""
+                                       "value":  "1142.4242424242425",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D7",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E7",
                                        "value":  "Antivuelco con Parrilla Hammer",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F7",
-                                       "value":  "1098.4848484848485",
-                                       "formula":  ""
+                                       "value":  "1142.4242424242425",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G7",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H7",
                                        "value":  "Defensa Delantera de Dos Tubos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I7",
-                                       "value":  "492.42424242424244",
-                                       "formula":  ""
+                                       "value":  "512.12121212121212",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "J7",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "K7",
                                        "value":  "Portaequipaje de 500 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L7",
-                                       "value":  "568.18181818181824",
-                                       "formula":  ""
+                                       "value":  "590.90909090909099",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "M7",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "N7",
                                        "value":  "Portaequipaje de 500 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O7",
-                                       "value":  "568.18181818181824",
-                                       "formula":  ""
+                                       "value":  "590.90909090909099",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "P7",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Q7",
                                        "value":  "Portaequipaje de 500 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R7",
-                                       "value":  "568.18181818181824",
-                                       "formula":  ""
+                                       "value":  "590.90909090909099",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "S7",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "T7",
                                        "value":  "Tapizado de Techo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "U7",
-                                       "value":  "265.15151515151518",
-                                       "formula":  ""
+                                       "value":  "275.75757575757575",
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "W7",
                                        "value":  "Portaequipaje de 500 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X7",
-                                       "value":  "568.18181818181824",
-                                       "formula":  ""
+                                       "value":  "590.90909090909099",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "Y7",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Z7",
                                        "value":  "Tapizado de Techo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AA7",
-                                       "value":  "321.969696969697",
-                                       "formula":  ""
+                                       "value":  "334.84848484848487",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "AB7",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AC7",
                                        "value":  "Tapizado de Techo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AD7",
-                                       "value":  "416.66666666666669",
-                                       "formula":  ""
+                                       "value":  "433.33333333333337",
+                                       "formula":  null
                                    }
                                ],
                      "row":  7
@@ -427,104 +544,149 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A8",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B8",
                                        "value":  "Antivuelco Z-Metal",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C8",
-                                       "value":  "359.84848484848487",
-                                       "formula":  ""
+                                       "value":  "374.24242424242425",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D8",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E8",
                                        "value":  "Antivuelco Metralleta",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F8",
-                                       "value":  "1098.4848484848485",
-                                       "formula":  ""
+                                       "value":  "1142.4242424242425",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G8",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H8",
                                        "value":  "Escalera de Acero",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I8",
-                                       "value":  "359.84848484848487",
-                                       "formula":  ""
+                                       "value":  "374.24242424242425",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "J8",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "K8",
                                        "value":  "Portaequipaje de 600 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L8",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "M8",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "N8",
                                        "value":  "Portaequipaje de 600 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O8",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "P8",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Q8",
                                        "value":  "Portaequipaje de 600 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R8",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "S8",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "T8",
                                        "value":  "Tapizado de Piso",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "U8",
-                                       "value":  "246.21212121212122",
-                                       "formula":  ""
+                                       "value":  "256.06060606060606",
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "W8",
                                        "value":  "Portaequipaje de 600 LT",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X8",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "Y8",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Z8",
                                        "value":  "Tapizado de Piso",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AA8",
-                                       "value":  "246.21212121212122",
-                                       "formula":  ""
+                                       "value":  "256.06060606060606",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "AB8",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AC8",
                                        "value":  "Tapizado de Piso",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AD8",
-                                       "value":  "303.03030303030306",
-                                       "formula":  ""
+                                       "value":  "315.15151515151518",
+                                       "formula":  null
                                    }
                                ],
                      "row":  8
@@ -532,104 +694,154 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A9",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B9",
                                        "value":  "Antivuelvo Z-Acerado",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C9",
-                                       "value":  "416.66666666666669",
-                                       "formula":  ""
+                                       "value":  "433.33333333333337",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D9",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E9",
                                        "value":  "Antivuelvo Megalodon",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F9",
-                                       "value":  "1212.1212121212122",
-                                       "formula":  ""
+                                       "value":  "1260.6060606060607",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G9",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H9",
                                        "value":  "Estribos de Acero",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I9",
-                                       "value":  "321.969696969697",
-                                       "formula":  ""
+                                       "value":  "334.84848484848487",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "J9",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "K9",
                                        "value":  "Tapizado de Asientos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L9",
-                                       "value":  "340.90909090909093",
-                                       "formula":  ""
+                                       "value":  "354.54545454545456",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "M9",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "N9",
                                        "value":  "Tapizado de Asientos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O9",
-                                       "value":  "340.90909090909093",
-                                       "formula":  ""
+                                       "value":  "354.54545454545456",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "P9",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Q9",
                                        "value":  "Tapizado de Asientos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R9",
-                                       "value":  "340.90909090909093",
-                                       "formula":  ""
+                                       "value":  "354.54545454545456",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "S9",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "T9",
                                        "value":  "Polarizado en Nanocerámico 3M",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "U9",
-                                       "value":  "568.18181818181824",
-                                       "formula":  ""
+                                       "value":  "590.90909090909099",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "V9",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "W9",
                                        "value":  "Tapizado de Asientos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X9",
-                                       "value":  "340.90909090909093",
-                                       "formula":  ""
+                                       "value":  "354.54545454545456",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "Y9",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Z9",
                                        "value":  "Polarizado en Nanocerámico 3M",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AA9",
-                                       "value":  "568.18181818181824",
-                                       "formula":  ""
+                                       "value":  "590.90909090909099",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "AB9",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AC9",
                                        "value":  "Polarizado en Nanocerámico 3M",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AD9",
-                                       "value":  "681.81818181818198",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
                                    }
                                ],
                      "row":  9
@@ -637,104 +849,154 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A10",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B10",
                                        "value":  "Antivuelco Metralleta",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C10",
-                                       "value":  "1098.4848484848485",
-                                       "formula":  ""
+                                       "value":  "1142.4242424242425",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D10",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E10",
                                        "value":  "Aros Black Rhino",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F10",
-                                       "value":  "1628.787878787879",
-                                       "formula":  ""
+                                       "value":  "1693.939393939394",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G10",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H10",
                                        "value":  "Neblineros Forse de Dos Unidades",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I10",
-                                       "value":  "321.969696969697",
-                                       "formula":  ""
+                                       "value":  "334.84848484848487",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "J10",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "K10",
                                        "value":  "Tapizado de Techo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L10",
-                                       "value":  "189.39393939393941",
-                                       "formula":  ""
+                                       "value":  "196.96969696969697",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "M10",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "N10",
                                        "value":  "Tapizado de Techo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O10",
-                                       "value":  "189.39393939393941",
-                                       "formula":  ""
+                                       "value":  "196.96969696969697",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "P10",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Q10",
                                        "value":  "Tapizado de Techo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R10",
-                                       "value":  "189.39393939393941",
-                                       "formula":  ""
+                                       "value":  "196.96969696969697",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "S10",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "T10",
                                        "value":  "Undercoating",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "U10",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "V10",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "W10",
                                        "value":  "Tapizado de Techo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X10",
-                                       "value":  "189.39393939393941",
-                                       "formula":  ""
+                                       "value":  "196.96969696969697",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "Y10",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Z10",
                                        "value":  "Undercoating",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AA10",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "AB10",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AC10",
                                        "value":  "Undercoating",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AD10",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
                                    }
                                ],
                      "row":  10
@@ -742,74 +1004,154 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A11",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B11",
                                        "value":  "Antivuelvo Megalodon",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C11",
-                                       "value":  "1212.1212121212122",
-                                       "formula":  ""
+                                       "value":  "1260.6060606060607",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D11",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E11",
                                        "value":  "Barra Led",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F11",
-                                       "value":  "454.54545454545456",
-                                       "formula":  ""
+                                       "value":  "472.72727272727275",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G11",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H11",
                                        "value":  "Neblineros Forse de Cuatro Unidades",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I11",
-                                       "value":  "606.06060606060612",
-                                       "formula":  ""
+                                       "value":  "630.30303030303037",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "J11",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "K11",
                                        "value":  "Tapizado de Piso",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L11",
-                                       "value":  "170.45454545454547",
-                                       "formula":  ""
+                                       "value":  "177.27272727272728",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "M11",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "N11",
                                        "value":  "Tapizado de Piso",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O11",
-                                       "value":  "170.45454545454547",
-                                       "formula":  ""
+                                       "value":  "177.27272727272728",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "P11",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Q11",
                                        "value":  "Tapizado de Piso",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R11",
-                                       "value":  "170.45454545454547",
-                                       "formula":  ""
+                                       "value":  "177.27272727272728",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "S11",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "T11",
+                                       "value":  "Tratamiento Cerámico",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "U11",
+                                       "value":  "990",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "V11",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "W11",
                                        "value":  "Tapizado de Piso",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X11",
-                                       "value":  "170.45454545454547",
-                                       "formula":  ""
+                                       "value":  "177.27272727272728",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "Y11",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "Z11",
+                                       "value":  "Tratamiento Cerámico",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "AA11",
+                                       "value":  "990",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "AB11",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "AC11",
+                                       "value":  "Tratamiento Cerámico",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "AD11",
+                                       "value":  "990",
+                                       "formula":  null
                                    }
                                ],
                      "row":  11
@@ -817,74 +1159,109 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A12",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B12",
                                        "value":  "Aros Black Rhino",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C12",
-                                       "value":  "1742.4242424242425",
-                                       "formula":  ""
+                                       "value":  "1812.1212121212122",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D12",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E12",
                                        "value":  "Correlluvias",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F12",
-                                       "value":  "132.57575757575759",
-                                       "formula":  ""
+                                       "value":  "137.87878787878788",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G12",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H12",
                                        "value":  "Parrilla de Techo Off Road",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I12",
-                                       "value":  "757.57575757575762",
-                                       "formula":  ""
+                                       "value":  "787.87878787878788",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "J12",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "K12",
                                        "value":  "Polarizado en Nanocerámico 3M",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L12",
-                                       "value":  "359.84848484848487",
-                                       "formula":  ""
+                                       "value":  "374.24242424242425",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "M12",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "N12",
                                        "value":  "Polarizado en Nanocerámico 3M",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O12",
-                                       "value":  "359.84848484848487",
-                                       "formula":  ""
+                                       "value":  "374.24242424242425",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "P12",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Q12",
                                        "value":  "Polarizado en Nanocerámico 3M",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R12",
-                                       "value":  "359.84848484848487",
-                                       "formula":  ""
+                                       "value":  "374.24242424242425",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "V12",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "W12",
                                        "value":  "Polarizado en Nanocerámico 3M",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X12",
-                                       "value":  "359.84848484848487",
-                                       "formula":  ""
+                                       "value":  "374.24242424242425",
+                                       "formula":  null
                                    }
                                ],
                      "row":  12
@@ -892,74 +1269,109 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A13",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B13",
                                        "value":  "Barras Traversales",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C13",
-                                       "value":  "208.33333333333334",
-                                       "formula":  ""
+                                       "value":  "216.66666666666669",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D13",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E13",
                                        "value":  "Estribos de Metal",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F13",
-                                       "value":  "719.69696969696975",
-                                       "formula":  ""
+                                       "value":  "748.4848484848485",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G13",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H13",
                                        "value":  "Tapizado de Asientos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I13",
-                                       "value":  "416.66666666666669",
-                                       "formula":  ""
+                                       "value":  "433.33333333333337",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "J13",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "K13",
                                        "value":  "Undercoating",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L13",
-                                       "value":  "492.42424242424244",
-                                       "formula":  ""
+                                       "value":  "512.12121212121212",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "M13",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "N13",
                                        "value":  "Undercoating",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O13",
-                                       "value":  "492.42424242424244",
-                                       "formula":  ""
+                                       "value":  "512.12121212121212",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "P13",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "Q13",
                                        "value":  "Undercoating",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R13",
-                                       "value":  "492.42424242424244",
-                                       "formula":  ""
+                                       "value":  "512.12121212121212",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "V13",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "W13",
                                        "value":  "Undercoating",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X13",
-                                       "value":  "492.42424242424244",
-                                       "formula":  ""
+                                       "value":  "512.12121212121212",
+                                       "formula":  null
                                    }
                                ],
                      "row":  13
@@ -967,34 +1379,109 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A14",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B14",
                                        "value":  "Barra Led",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C14",
-                                       "value":  "454.54545454545456",
-                                       "formula":  ""
+                                       "value":  "472.72727272727275",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D14",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E14",
                                        "value":  "Fenders Lisos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F14",
-                                       "value":  "643.93939393939399",
-                                       "formula":  ""
+                                       "value":  "669.69696969696975",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G14",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H14",
                                        "value":  "Tapizado de Techo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I14",
-                                       "value":  "246.21212121212122",
-                                       "formula":  ""
+                                       "value":  "256.06060606060606",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "J14",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "K14",
+                                       "value":  "Tratamiento Cerámico",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "L14",
+                                       "value":  "650",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "M14",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "N14",
+                                       "value":  "Tratamiento Cerámico",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "O14",
+                                       "value":  "650",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "P14",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "Q14",
+                                       "value":  "Tratamiento Cerámico",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "R14",
+                                       "value":  "650",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "V14",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "W14",
+                                       "value":  "Tratamiento Cerámico",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "X14",
+                                       "value":  "650",
+                                       "formula":  null
                                    }
                                ],
                      "row":  14
@@ -1002,34 +1489,49 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A15",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B15",
                                        "value":  "Correlluvias",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C15",
-                                       "value":  "64.393939393939391",
-                                       "formula":  ""
+                                       "value":  "66.969696969696969",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D15",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E15",
                                        "value":  "Llantas Mickey Thompson",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F15",
-                                       "value":  "2234.848484848485",
-                                       "formula":  ""
+                                       "value":  "2324.2424242424245",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G15",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H15",
                                        "value":  "Tapizado de Piso",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I15",
-                                       "value":  "246.21212121212122",
-                                       "formula":  ""
+                                       "value":  "256.06060606060606",
+                                       "formula":  null
                                    }
                                ],
                      "row":  15
@@ -1037,34 +1539,49 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A16",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B16",
                                        "value":  "Defensa Delantera de Un Tubo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C16",
-                                       "value":  "397.72727272727275",
-                                       "formula":  ""
+                                       "value":  "413.63636363636368",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D16",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E16",
                                        "value":  "Neblineros Forse de Dos Unidades",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F16",
-                                       "value":  "321.969696969697",
-                                       "formula":  ""
+                                       "value":  "334.84848484848487",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G16",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H16",
                                        "value":  "Polarizado en Nanocerámico 3M",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I16",
-                                       "value":  "454.54545454545456",
-                                       "formula":  ""
+                                       "value":  "472.72727272727275",
+                                       "formula":  null
                                    }
                                ],
                      "row":  16
@@ -1072,34 +1589,49 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A17",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B17",
                                        "value":  "Defensa Delantera de Dos Tubos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C17",
-                                       "value":  "492.42424242424244",
-                                       "formula":  ""
+                                       "value":  "512.12121212121212",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D17",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E17",
                                        "value":  "Neblineros Forse de Cuatro Unidades",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F17",
-                                       "value":  "606.06060606060612",
-                                       "formula":  ""
+                                       "value":  "630.30303030303037",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G17",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "H17",
                                        "value":  "Undercoating",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I17",
-                                       "value":  "568.18181818181824",
-                                       "formula":  ""
+                                       "value":  "590.90909090909099",
+                                       "formula":  null
                                    }
                                ],
                      "row":  17
@@ -1107,24 +1639,49 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A18",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B18",
                                        "value":  "Estribos de Acero",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C18",
-                                       "value":  "321.969696969697",
-                                       "formula":  ""
+                                       "value":  "334.84848484848487",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D18",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E18",
                                        "value":  "Parrilla de Techo Off Road",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F18",
-                                       "value":  "909.09090909090912",
-                                       "formula":  ""
+                                       "value":  "945.4545454545455",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "G18",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "H18",
+                                       "value":  "Tratamiento Cerámico",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "I18",
+                                       "value":  "850",
+                                       "formula":  null
                                    }
                                ],
                      "row":  18
@@ -1132,24 +1689,34 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A19",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B19",
                                        "value":  "Estribos de Metal",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C19",
-                                       "value":  "511.36363636363637",
-                                       "formula":  ""
+                                       "value":  "531.81818181818187",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D19",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E19",
                                        "value":  "Portaneblineros",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F19",
-                                       "value":  "321.969696969697",
-                                       "formula":  ""
+                                       "value":  "334.84848484848487",
+                                       "formula":  null
                                    }
                                ],
                      "row":  19
@@ -1157,24 +1724,34 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A20",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B20",
                                        "value":  "Fenders Lisos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C20",
-                                       "value":  "359.84848484848487",
-                                       "formula":  ""
+                                       "value":  "374.24242424242425",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D20",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E20",
                                        "value":  "Tapa Retráctil Manual",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F20",
-                                       "value":  "1628.787878787879",
-                                       "formula":  ""
+                                       "value":  "1693.939393939394",
+                                       "formula":  null
                                    }
                                ],
                      "row":  20
@@ -1182,24 +1759,34 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A21",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B21",
                                        "value":  "Fenders Empernados",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C21",
-                                       "value":  "416.66666666666669",
-                                       "formula":  ""
+                                       "value":  "433.33333333333337",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D21",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E21",
                                        "value":  "Tapa Retráctil Eléctrica",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F21",
-                                       "value":  "2121.2121212121215",
-                                       "formula":  ""
+                                       "value":  "2206.060606060606",
+                                       "formula":  null
                                    }
                                ],
                      "row":  21
@@ -1207,24 +1794,39 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A22",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B22",
                                        "value":  "Lona Marítima Keko",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C22",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D22",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E22",
                                        "value":  "Tapizado de Asientos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F22",
-                                       "value":  "416.66666666666669",
-                                       "formula":  ""
+                                       "value":  "433.33333333333337",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "T22",
+                                       "value":  "1600",
+                                       "formula":  null
                                    }
                                ],
                      "row":  22
@@ -1232,24 +1834,39 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A23",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B23",
                                        "value":  "Llantas Mickey Thompson",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C23",
-                                       "value":  "1590.909090909091",
-                                       "formula":  ""
+                                       "value":  "1654.5454545454547",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D23",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E23",
                                        "value":  "Tapizado de Techo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F23",
-                                       "value":  "246.21212121212122",
-                                       "formula":  ""
+                                       "value":  "256.06060606060606",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "T23",
+                                       "value":  "?",
+                                       "formula":  null
                                    }
                                ],
                      "row":  23
@@ -1257,24 +1874,34 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A24",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B24",
                                        "value":  "Moldura de Capot",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C24",
-                                       "value":  "265.15151515151518",
-                                       "formula":  ""
+                                       "value":  "275.75757575757575",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D24",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E24",
                                        "value":  "Tapizado de Piso",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F24",
-                                       "value":  "246.21212121212122",
-                                       "formula":  ""
+                                       "value":  "256.06060606060606",
+                                       "formula":  null
                                    }
                                ],
                      "row":  24
@@ -1282,24 +1909,34 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A25",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B25",
                                        "value":  "Neblineros Forse de Dos Unidades",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C25",
-                                       "value":  "321.969696969697",
-                                       "formula":  ""
+                                       "value":  "334.84848484848487",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D25",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E25",
                                        "value":  "Polarizado en Nanocerámico 3M",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F25",
-                                       "value":  "454.54545454545456",
-                                       "formula":  ""
+                                       "value":  "472.72727272727275",
+                                       "formula":  null
                                    }
                                ],
                      "row":  25
@@ -1307,24 +1944,34 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A26",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B26",
                                        "value":  "Neblineros Forse de Cuatro Unidades",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C26",
-                                       "value":  "606.06060606060612",
-                                       "formula":  ""
+                                       "value":  "630.30303030303037",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D26",
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "E26",
                                        "value":  "Undercoating",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F26",
-                                       "value":  "606.06060606060612",
-                                       "formula":  ""
+                                       "value":  "630.30303030303037",
+                                       "formula":  null
                                    }
                                ],
                      "row":  26
@@ -1332,14 +1979,34 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A27",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B27",
                                        "value":  "Portaneblineros",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C27",
-                                       "value":  "321.969696969697",
-                                       "formula":  ""
+                                       "value":  "334.84848484848487",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "D27",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "E27",
+                                       "value":  "Tratamiento Cerámico",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "F27",
+                                       "value":  "850",
+                                       "formula":  null
                                    }
                                ],
                      "row":  27
@@ -1347,14 +2014,19 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A28",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B28",
                                        "value":  "Protector de Tolva",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C28",
-                                       "value":  "473.4848484848485",
-                                       "formula":  ""
+                                       "value":  "492.42424242424244",
+                                       "formula":  null
                                    }
                                ],
                      "row":  28
@@ -1362,14 +2034,19 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A29",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B29",
                                        "value":  "Parrilla de Techo Off Road",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C29",
-                                       "value":  "681.81818181818187",
-                                       "formula":  ""
+                                       "value":  "709.09090909090912",
+                                       "formula":  null
                                    }
                                ],
                      "row":  29
@@ -1377,14 +2054,19 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A30",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B30",
                                        "value":  "Tapa Retráctil Manual",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C30",
-                                       "value":  "1325.7575757575758",
-                                       "formula":  ""
+                                       "value":  "1378.7878787878788",
+                                       "formula":  null
                                    }
                                ],
                      "row":  30
@@ -1392,14 +2074,19 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A31",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B31",
                                        "value":  "Tapa Retráctil Eléctrica",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C31",
-                                       "value":  "1628.787878787879",
-                                       "formula":  ""
+                                       "value":  "1693.939393939394",
+                                       "formula":  null
                                    }
                                ],
                      "row":  31
@@ -1407,14 +2094,19 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A32",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B32",
                                        "value":  "Tapizado de Asientos",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C32",
-                                       "value":  "340.90909090909093",
-                                       "formula":  ""
+                                       "value":  "354.54545454545456",
+                                       "formula":  null
                                    }
                                ],
                      "row":  32
@@ -1422,14 +2114,19 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A33",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B33",
                                        "value":  "Tapizado de Techo",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C33",
-                                       "value":  "189.39393939393941",
-                                       "formula":  ""
+                                       "value":  "196.96969696969697",
+                                       "formula":  null
                                    }
                                ],
                      "row":  33
@@ -1437,14 +2134,19 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A34",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B34",
                                        "value":  "Tapizado de Piso",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C34",
-                                       "value":  "170.45454545454547",
-                                       "formula":  ""
+                                       "value":  "177.27272727272728",
+                                       "formula":  null
                                    }
                                ],
                      "row":  34
@@ -1452,14 +2154,19 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A35",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B35",
                                        "value":  "Polarizado en Nanocerámico 3M",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C35",
-                                       "value":  "359.84848484848487",
-                                       "formula":  ""
+                                       "value":  "374.24242424242425",
+                                       "formula":  null
                                    }
                                ],
                      "row":  35
@@ -1467,14 +2174,19 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A36",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
                                        "cell":  "B36",
                                        "value":  "Undercoating",
-                                       "formula":  ""
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "C36",
-                                       "value":  "492.42424242424244",
-                                       "formula":  ""
+                                       "value":  "512.12121212121212",
+                                       "formula":  null
                                    }
                                ],
                      "row":  36
@@ -1482,49 +2194,69 @@
                  {
                      "cells":  [
                                    {
+                                       "cell":  "A37",
+                                       "value":  null,
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "B37",
+                                       "value":  "Tratamiento Cerámico",
+                                       "formula":  null
+                                   },
+                                   {
+                                       "cell":  "C37",
+                                       "value":  "720",
+                                       "formula":  null
+                                   }
+                               ],
+                     "row":  37
+                 },
+                 {
+                     "cells":  [
+                                   {
                                        "cell":  "F39",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I39",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L39",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O39",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R39",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "U39",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X39",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AA39",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AD39",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    }
                                ],
                      "row":  39
@@ -1533,53 +2265,53 @@
                      "cells":  [
                                    {
                                        "cell":  "C40",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F40",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I40",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L40",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O40",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R40",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "U40",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X40",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AA40",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AD40",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    }
                                ],
                      "row":  40
@@ -1588,53 +2320,53 @@
                      "cells":  [
                                    {
                                        "cell":  "C44",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "F44",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "I44",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "L44",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "O44",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "R44",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "U44",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "X44",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AA44",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    },
                                    {
                                        "cell":  "AD44",
-                                       "value":  "",
-                                       "formula":  ""
+                                       "value":  null,
+                                       "formula":  null
                                    }
                                ],
                      "row":  44

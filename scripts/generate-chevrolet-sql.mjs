@@ -6,10 +6,10 @@ const rows = catalog.models.flatMap((model) => model.items.map((item) => {
   const modelCode = modelCodes[model.name];
   if (!modelCode) throw new Error('Modelo sin codigo');
   const code = `CHEV-XLS-${modelCode}-${String(item.sourceRow).padStart(3,'0')}`;
-  return { codigo_modelo:modelCode, nombre_modelo:model.name, codigo_producto:code, nombre_producto:item.name, precio_venta:item.price, orden:item.sourceRow };
+  return { codigo_modelo:modelCode, nombre_modelo:model.name, codigo_producto:code, nombre_producto:item.name, precio_venta:item.price, orden:item.sourceRow, tipo_codigo: item.type || 'ACC' };
 }));
 const sql = `-- CARGAR CATALOGO CHEVROLET EN SUPABASE
--- Fuente: ${catalog.source} | Hoja1 | 121 opciones / 10 modelos.
+-- Fuente: ${catalog.source} | Hoja1 | ${rows.length} opciones / ${catalog.models.length} modelos.
 -- Importacion atomica en un solo bloque DO, sin tablas temporales.
 -- Ejecutar COMPLETO en Supabase > SQL Editor. No hace falta volver a ejecutar el SQL de limpieza.
 -- Moneda: USD, interpretando el encabezado PRECIO $. Cambiar v_moneda si corresponde.
@@ -20,6 +20,8 @@ DO $import$
 DECLARE
   v_cliente public.lc_cliente.id_cliente%TYPE;
   v_tipo public.lc_tipo_producto.id_tipo_producto%TYPE;
+  v_accesorio public.lc_tipo_producto.id_tipo_producto%TYPE;
+  v_servicio public.lc_tipo_producto.id_tipo_producto%TYPE;
   v_modelo public.lc_modelo.id_modelo%TYPE;
   v_producto public.lc_producto.id_producto%TYPE;
   v_moneda varchar(3) := '${catalog.currency}';
@@ -49,6 +51,15 @@ BEGIN
     END IF;
   END IF;
 
+  v_accesorio := v_tipo;
+  IF NOT EXISTS (SELECT 1 FROM public.lc_tipo_producto WHERE codigo='SER') THEN
+    INSERT INTO public.lc_tipo_producto (codigo,nombre,activo) VALUES ('SER','Servicios',true);
+  END IF;
+  SELECT id_tipo_producto INTO STRICT v_servicio FROM public.lc_tipo_producto WHERE codigo='SER';
+  IF NOT EXISTS (SELECT 1 FROM public.lc_tipo_producto WHERE id_tipo_producto=v_servicio AND activo IS DISTINCT FROM false) THEN
+    RAISE EXCEPTION 'El tipo SER esta inactivo; activar antes de importar';
+  END IF;
+
   -- Solo modifica los productos exclusivos de esta importacion.
   IF EXISTS (
     SELECT 1 FROM public.lc_producto p
@@ -57,7 +68,8 @@ BEGIN
     WHERE pc.id_cliente<>v_cliente
   ) THEN RAISE EXCEPTION 'Un codigo CHEV-XLS esta vinculado a otro cliente; no se modifico nada'; END IF;
 
-  FOR v_row IN SELECT * FROM jsonb_to_recordset(v_datos) AS i(codigo_modelo text,nombre_modelo text,codigo_producto text,nombre_producto text,precio_venta numeric,orden integer) ORDER BY codigo_modelo,orden LOOP
+  FOR v_row IN SELECT * FROM jsonb_to_recordset(v_datos) AS i(codigo_modelo text,nombre_modelo text,codigo_producto text,nombre_producto text,precio_venta numeric,orden integer,tipo_codigo text) ORDER BY codigo_modelo,orden LOOP
+    v_tipo := CASE WHEN v_row.tipo_codigo='SER' THEN v_servicio ELSE v_accesorio END;
     SELECT count(*) INTO v_total FROM public.lc_modelo WHERE codigo_modelo=v_row.codigo_modelo;
     IF v_total>1 THEN RAISE EXCEPTION 'Modelo duplicado: %',v_row.codigo_modelo; END IF;
     IF v_total=0 THEN
@@ -107,15 +119,18 @@ BEGIN
     JOIN public.lc_producto p ON p.id_producto=pc.id_producto
     JOIN jsonb_to_recordset(v_datos) AS i(codigo_modelo text,nombre_modelo text,codigo_producto text,nombre_producto text,precio_venta numeric,orden integer) ON i.codigo_producto=p.codigo
     WHERE pc.id_cliente=v_cliente AND pc.activo IS DISTINCT FROM false;
-  IF v_total<>121 THEN RAISE EXCEPTION 'Se esperaban 121 opciones; se obtuvieron %',v_total; END IF;
+  IF v_total<>${rows.length} THEN RAISE EXCEPTION 'Se esperaban ${rows.length} opciones; se obtuvieron %',v_total; END IF;
 END
 $import$;
 
--- Resultado esperado: 10 filas, con un total de 121 opciones.
-SELECT m.nombre_modelo AS modelo,count(*) AS opciones,min(pc.moneda) AS moneda
+-- Resultado esperado: ${catalog.models.length} filas, con un total de ${rows.length} opciones.
+SELECT m.nombre_modelo AS modelo,count(*) AS opciones,
+  count(*) FILTER (WHERE t.codigo='ACC') AS accesorios,
+  count(*) FILTER (WHERE t.codigo='SER') AS servicios,min(pc.moneda) AS moneda
 FROM public.lc_producto_cliente pc
 JOIN public.lc_cliente c ON c.id_cliente=pc.id_cliente
 JOIN public.lc_producto p ON p.id_producto=pc.id_producto
+JOIN public.lc_tipo_producto t ON t.id_tipo_producto=p.id_tipo_producto
 JOIN public.lc_modelo m ON m.id_modelo=p.id_modelo
 WHERE c.slug='chevrolet' AND pc.activo IS DISTINCT FROM false AND p.activo IS DISTINCT FROM false
 GROUP BY m.nombre_modelo ORDER BY m.nombre_modelo;

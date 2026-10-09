@@ -1,6 +1,6 @@
 {
   "brand": "chevrolet",
-  "source": "Copia de LISTA DE PRECIOS LUXCAR ELOY.xlsx",
+  "source": "Copia de LISTA DE PRECIOS LUXCAR ELOY recontra ultimo.xlsx",
   "sheet": "Hoja1",
   "currency": "USD",
   "pricePrecision": 2,
@@ -12,258 +12,299 @@
         {
           "id": "chevrolet-colorado-wt-5",
           "name": "Antivuelco de Metal Hammer",
-          "price": 719.7,
-          "sourcePrice": "719.69696969696975",
+          "type": "ACC",
+          "price": 748.48,
+          "sourcePrice": "748.4848484848485",
           "sourceCell": "C5",
           "sourceRow": 5
         },
         {
           "id": "chevrolet-colorado-wt-6",
           "name": "Antivuelco Acerado Hammer",
-          "price": 871.21,
-          "sourcePrice": "871.21212121212125",
+          "type": "ACC",
+          "price": 906.06,
+          "sourcePrice": "906.06060606060612",
           "sourceCell": "C6",
           "sourceRow": 6
         },
         {
           "id": "chevrolet-colorado-wt-7",
           "name": "Antivuelco con Parrilla Hammer",
-          "price": 1098.48,
-          "sourcePrice": "1098.4848484848485",
+          "type": "ACC",
+          "price": 1142.42,
+          "sourcePrice": "1142.4242424242425",
           "sourceCell": "C7",
           "sourceRow": 7
         },
         {
           "id": "chevrolet-colorado-wt-8",
           "name": "Antivuelco Z-Metal",
-          "price": 359.85,
-          "sourcePrice": "359.84848484848487",
+          "type": "ACC",
+          "price": 374.24,
+          "sourcePrice": "374.24242424242425",
           "sourceCell": "C8",
           "sourceRow": 8
         },
         {
           "id": "chevrolet-colorado-wt-9",
           "name": "Antivuelvo Z-Acerado",
-          "price": 416.67,
-          "sourcePrice": "416.66666666666669",
+          "type": "ACC",
+          "price": 433.33,
+          "sourcePrice": "433.33333333333337",
           "sourceCell": "C9",
           "sourceRow": 9
         },
         {
           "id": "chevrolet-colorado-wt-10",
           "name": "Antivuelco Metralleta",
-          "price": 1098.48,
-          "sourcePrice": "1098.4848484848485",
+          "type": "ACC",
+          "price": 1142.42,
+          "sourcePrice": "1142.4242424242425",
           "sourceCell": "C10",
           "sourceRow": 10
         },
         {
           "id": "chevrolet-colorado-wt-11",
           "name": "Antivuelvo Megalodon",
-          "price": 1212.12,
-          "sourcePrice": "1212.1212121212122",
+          "type": "ACC",
+          "price": 1260.61,
+          "sourcePrice": "1260.6060606060607",
           "sourceCell": "C11",
           "sourceRow": 11
         },
         {
           "id": "chevrolet-colorado-wt-12",
           "name": "Aros Black Rhino",
-          "price": 1742.42,
-          "sourcePrice": "1742.4242424242425",
+          "type": "ACC",
+          "price": 1812.12,
+          "sourcePrice": "1812.1212121212122",
           "sourceCell": "C12",
           "sourceRow": 12
         },
         {
           "id": "chevrolet-colorado-wt-13",
           "name": "Barras Traversales",
-          "price": 208.33,
-          "sourcePrice": "208.33333333333334",
+          "type": "ACC",
+          "price": 216.67,
+          "sourcePrice": "216.66666666666669",
           "sourceCell": "C13",
           "sourceRow": 13
         },
         {
           "id": "chevrolet-colorado-wt-14",
           "name": "Barra Led",
-          "price": 454.55,
-          "sourcePrice": "454.54545454545456",
+          "type": "ACC",
+          "price": 472.73,
+          "sourcePrice": "472.72727272727275",
           "sourceCell": "C14",
           "sourceRow": 14
         },
         {
           "id": "chevrolet-colorado-wt-15",
           "name": "Correlluvias",
-          "price": 64.39,
-          "sourcePrice": "64.393939393939391",
+          "type": "ACC",
+          "price": 66.97,
+          "sourcePrice": "66.969696969696969",
           "sourceCell": "C15",
           "sourceRow": 15
         },
         {
           "id": "chevrolet-colorado-wt-16",
           "name": "Defensa Delantera de Un Tubo",
-          "price": 397.73,
-          "sourcePrice": "397.72727272727275",
+          "type": "ACC",
+          "price": 413.64,
+          "sourcePrice": "413.63636363636368",
           "sourceCell": "C16",
           "sourceRow": 16
         },
         {
           "id": "chevrolet-colorado-wt-17",
           "name": "Defensa Delantera de Dos Tubos",
-          "price": 492.42,
-          "sourcePrice": "492.42424242424244",
+          "type": "ACC",
+          "price": 512.12,
+          "sourcePrice": "512.12121212121212",
           "sourceCell": "C17",
           "sourceRow": 17
         },
         {
           "id": "chevrolet-colorado-wt-18",
           "name": "Estribos de Acero",
-          "price": 321.97,
-          "sourcePrice": "321.969696969697",
+          "type": "ACC",
+          "price": 334.85,
+          "sourcePrice": "334.84848484848487",
           "sourceCell": "C18",
           "sourceRow": 18
         },
         {
           "id": "chevrolet-colorado-wt-19",
           "name": "Estribos de Metal",
-          "price": 511.36,
-          "sourcePrice": "511.36363636363637",
+          "type": "ACC",
+          "price": 531.82,
+          "sourcePrice": "531.81818181818187",
           "sourceCell": "C19",
           "sourceRow": 19
         },
         {
           "id": "chevrolet-colorado-wt-20",
           "name": "Fenders Lisos",
-          "price": 359.85,
-          "sourcePrice": "359.84848484848487",
+          "type": "ACC",
+          "price": 374.24,
+          "sourcePrice": "374.24242424242425",
           "sourceCell": "C20",
           "sourceRow": 20
         },
         {
           "id": "chevrolet-colorado-wt-21",
           "name": "Fenders Empernados",
-          "price": 416.67,
-          "sourcePrice": "416.66666666666669",
+          "type": "ACC",
+          "price": 433.33,
+          "sourcePrice": "433.33333333333337",
           "sourceCell": "C21",
           "sourceRow": 21
         },
         {
           "id": "chevrolet-colorado-wt-22",
           "name": "Lona Marítima Keko",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "ACC",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "C22",
           "sourceRow": 22
         },
         {
           "id": "chevrolet-colorado-wt-23",
           "name": "Llantas Mickey Thompson",
-          "price": 1590.91,
-          "sourcePrice": "1590.909090909091",
+          "type": "ACC",
+          "price": 1654.55,
+          "sourcePrice": "1654.5454545454547",
           "sourceCell": "C23",
           "sourceRow": 23
         },
         {
           "id": "chevrolet-colorado-wt-24",
           "name": "Moldura de Capot",
-          "price": 265.15,
-          "sourcePrice": "265.15151515151518",
+          "type": "ACC",
+          "price": 275.76,
+          "sourcePrice": "275.75757575757575",
           "sourceCell": "C24",
           "sourceRow": 24
         },
         {
           "id": "chevrolet-colorado-wt-25",
           "name": "Neblineros Forse de Dos Unidades",
-          "price": 321.97,
-          "sourcePrice": "321.969696969697",
+          "type": "ACC",
+          "price": 334.85,
+          "sourcePrice": "334.84848484848487",
           "sourceCell": "C25",
           "sourceRow": 25
         },
         {
           "id": "chevrolet-colorado-wt-26",
           "name": "Neblineros Forse de Cuatro Unidades",
-          "price": 606.06,
-          "sourcePrice": "606.06060606060612",
+          "type": "ACC",
+          "price": 630.3,
+          "sourcePrice": "630.30303030303037",
           "sourceCell": "C26",
           "sourceRow": 26
         },
         {
           "id": "chevrolet-colorado-wt-27",
           "name": "Portaneblineros",
-          "price": 321.97,
-          "sourcePrice": "321.969696969697",
+          "type": "ACC",
+          "price": 334.85,
+          "sourcePrice": "334.84848484848487",
           "sourceCell": "C27",
           "sourceRow": 27
         },
         {
           "id": "chevrolet-colorado-wt-28",
           "name": "Protector de Tolva",
-          "price": 473.48,
-          "sourcePrice": "473.4848484848485",
+          "type": "ACC",
+          "price": 492.42,
+          "sourcePrice": "492.42424242424244",
           "sourceCell": "C28",
           "sourceRow": 28
         },
         {
           "id": "chevrolet-colorado-wt-29",
           "name": "Parrilla de Techo Off Road",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "ACC",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "C29",
           "sourceRow": 29
         },
         {
           "id": "chevrolet-colorado-wt-30",
           "name": "Tapa Retráctil Manual",
-          "price": 1325.76,
-          "sourcePrice": "1325.7575757575758",
+          "type": "ACC",
+          "price": 1378.79,
+          "sourcePrice": "1378.7878787878788",
           "sourceCell": "C30",
           "sourceRow": 30
         },
         {
           "id": "chevrolet-colorado-wt-31",
           "name": "Tapa Retráctil Eléctrica",
-          "price": 1628.79,
-          "sourcePrice": "1628.787878787879",
+          "type": "ACC",
+          "price": 1693.94,
+          "sourcePrice": "1693.939393939394",
           "sourceCell": "C31",
           "sourceRow": 31
         },
         {
           "id": "chevrolet-colorado-wt-32",
           "name": "Tapizado de Asientos",
-          "price": 340.91,
-          "sourcePrice": "340.90909090909093",
+          "type": "SER",
+          "price": 354.55,
+          "sourcePrice": "354.54545454545456",
           "sourceCell": "C32",
           "sourceRow": 32
         },
         {
           "id": "chevrolet-colorado-wt-33",
           "name": "Tapizado de Techo",
-          "price": 189.39,
-          "sourcePrice": "189.39393939393941",
+          "type": "SER",
+          "price": 196.97,
+          "sourcePrice": "196.96969696969697",
           "sourceCell": "C33",
           "sourceRow": 33
         },
         {
           "id": "chevrolet-colorado-wt-34",
           "name": "Tapizado de Piso",
-          "price": 170.45,
-          "sourcePrice": "170.45454545454547",
+          "type": "SER",
+          "price": 177.27,
+          "sourcePrice": "177.27272727272728",
           "sourceCell": "C34",
           "sourceRow": 34
         },
         {
           "id": "chevrolet-colorado-wt-35",
           "name": "Polarizado en Nanocerámico 3M",
-          "price": 359.85,
-          "sourcePrice": "359.84848484848487",
+          "type": "SER",
+          "price": 374.24,
+          "sourcePrice": "374.24242424242425",
           "sourceCell": "C35",
           "sourceRow": 35
         },
         {
           "id": "chevrolet-colorado-wt-36",
           "name": "Undercoating",
-          "price": 492.42,
-          "sourcePrice": "492.42424242424244",
+          "type": "SER",
+          "price": 512.12,
+          "sourcePrice": "512.12121212121212",
           "sourceCell": "C36",
           "sourceRow": 36
+        },
+        {
+          "id": "chevrolet-colorado-wt-37",
+          "name": "Tratamiento Cerámico",
+          "type": "SER",
+          "price": 720,
+          "sourcePrice": "720",
+          "sourceCell": "C37",
+          "sourceRow": 37
         }
       ]
     },
@@ -274,178 +315,209 @@
         {
           "id": "chevrolet-silverado-5",
           "name": "Antivuelco de Metal Hammer",
-          "price": 719.7,
-          "sourcePrice": "719.69696969696975",
+          "type": "ACC",
+          "price": 748.48,
+          "sourcePrice": "748.4848484848485",
           "sourceCell": "F5",
           "sourceRow": 5
         },
         {
           "id": "chevrolet-silverado-6",
           "name": "Antivuelco Acerado Hammer",
-          "price": 871.21,
-          "sourcePrice": "871.21212121212125",
+          "type": "ACC",
+          "price": 906.06,
+          "sourcePrice": "906.06060606060612",
           "sourceCell": "F6",
           "sourceRow": 6
         },
         {
           "id": "chevrolet-silverado-7",
           "name": "Antivuelco con Parrilla Hammer",
-          "price": 1098.48,
-          "sourcePrice": "1098.4848484848485",
+          "type": "ACC",
+          "price": 1142.42,
+          "sourcePrice": "1142.4242424242425",
           "sourceCell": "F7",
           "sourceRow": 7
         },
         {
           "id": "chevrolet-silverado-8",
           "name": "Antivuelco Metralleta",
-          "price": 1098.48,
-          "sourcePrice": "1098.4848484848485",
+          "type": "ACC",
+          "price": 1142.42,
+          "sourcePrice": "1142.4242424242425",
           "sourceCell": "F8",
           "sourceRow": 8
         },
         {
           "id": "chevrolet-silverado-9",
           "name": "Antivuelvo Megalodon",
-          "price": 1212.12,
-          "sourcePrice": "1212.1212121212122",
+          "type": "ACC",
+          "price": 1260.61,
+          "sourcePrice": "1260.6060606060607",
           "sourceCell": "F9",
           "sourceRow": 9
         },
         {
           "id": "chevrolet-silverado-10",
           "name": "Aros Black Rhino",
-          "price": 1628.79,
-          "sourcePrice": "1628.787878787879",
+          "type": "ACC",
+          "price": 1693.94,
+          "sourcePrice": "1693.939393939394",
           "sourceCell": "F10",
           "sourceRow": 10
         },
         {
           "id": "chevrolet-silverado-11",
           "name": "Barra Led",
-          "price": 454.55,
-          "sourcePrice": "454.54545454545456",
+          "type": "ACC",
+          "price": 472.73,
+          "sourcePrice": "472.72727272727275",
           "sourceCell": "F11",
           "sourceRow": 11
         },
         {
           "id": "chevrolet-silverado-12",
           "name": "Correlluvias",
-          "price": 132.58,
-          "sourcePrice": "132.57575757575759",
+          "type": "ACC",
+          "price": 137.88,
+          "sourcePrice": "137.87878787878788",
           "sourceCell": "F12",
           "sourceRow": 12
         },
         {
           "id": "chevrolet-silverado-13",
           "name": "Estribos de Metal",
-          "price": 719.7,
-          "sourcePrice": "719.69696969696975",
+          "type": "ACC",
+          "price": 748.48,
+          "sourcePrice": "748.4848484848485",
           "sourceCell": "F13",
           "sourceRow": 13
         },
         {
           "id": "chevrolet-silverado-14",
           "name": "Fenders Lisos",
-          "price": 643.94,
-          "sourcePrice": "643.93939393939399",
+          "type": "ACC",
+          "price": 669.7,
+          "sourcePrice": "669.69696969696975",
           "sourceCell": "F14",
           "sourceRow": 14
         },
         {
           "id": "chevrolet-silverado-15",
           "name": "Llantas Mickey Thompson",
-          "price": 2234.85,
-          "sourcePrice": "2234.848484848485",
+          "type": "ACC",
+          "price": 2324.24,
+          "sourcePrice": "2324.2424242424245",
           "sourceCell": "F15",
           "sourceRow": 15
         },
         {
           "id": "chevrolet-silverado-16",
           "name": "Neblineros Forse de Dos Unidades",
-          "price": 321.97,
-          "sourcePrice": "321.969696969697",
+          "type": "ACC",
+          "price": 334.85,
+          "sourcePrice": "334.84848484848487",
           "sourceCell": "F16",
           "sourceRow": 16
         },
         {
           "id": "chevrolet-silverado-17",
           "name": "Neblineros Forse de Cuatro Unidades",
-          "price": 606.06,
-          "sourcePrice": "606.06060606060612",
+          "type": "ACC",
+          "price": 630.3,
+          "sourcePrice": "630.30303030303037",
           "sourceCell": "F17",
           "sourceRow": 17
         },
         {
           "id": "chevrolet-silverado-18",
           "name": "Parrilla de Techo Off Road",
-          "price": 909.09,
-          "sourcePrice": "909.09090909090912",
+          "type": "ACC",
+          "price": 945.45,
+          "sourcePrice": "945.4545454545455",
           "sourceCell": "F18",
           "sourceRow": 18
         },
         {
           "id": "chevrolet-silverado-19",
           "name": "Portaneblineros",
-          "price": 321.97,
-          "sourcePrice": "321.969696969697",
+          "type": "ACC",
+          "price": 334.85,
+          "sourcePrice": "334.84848484848487",
           "sourceCell": "F19",
           "sourceRow": 19
         },
         {
           "id": "chevrolet-silverado-20",
           "name": "Tapa Retráctil Manual",
-          "price": 1628.79,
-          "sourcePrice": "1628.787878787879",
+          "type": "ACC",
+          "price": 1693.94,
+          "sourcePrice": "1693.939393939394",
           "sourceCell": "F20",
           "sourceRow": 20
         },
         {
           "id": "chevrolet-silverado-21",
           "name": "Tapa Retráctil Eléctrica",
-          "price": 2121.21,
-          "sourcePrice": "2121.2121212121215",
+          "type": "ACC",
+          "price": 2206.06,
+          "sourcePrice": "2206.060606060606",
           "sourceCell": "F21",
           "sourceRow": 21
         },
         {
           "id": "chevrolet-silverado-22",
           "name": "Tapizado de Asientos",
-          "price": 416.67,
-          "sourcePrice": "416.66666666666669",
+          "type": "SER",
+          "price": 433.33,
+          "sourcePrice": "433.33333333333337",
           "sourceCell": "F22",
           "sourceRow": 22
         },
         {
           "id": "chevrolet-silverado-23",
           "name": "Tapizado de Techo",
-          "price": 246.21,
-          "sourcePrice": "246.21212121212122",
+          "type": "SER",
+          "price": 256.06,
+          "sourcePrice": "256.06060606060606",
           "sourceCell": "F23",
           "sourceRow": 23
         },
         {
           "id": "chevrolet-silverado-24",
           "name": "Tapizado de Piso",
-          "price": 246.21,
-          "sourcePrice": "246.21212121212122",
+          "type": "SER",
+          "price": 256.06,
+          "sourcePrice": "256.06060606060606",
           "sourceCell": "F24",
           "sourceRow": 24
         },
         {
           "id": "chevrolet-silverado-25",
           "name": "Polarizado en Nanocerámico 3M",
-          "price": 454.55,
-          "sourcePrice": "454.54545454545456",
+          "type": "SER",
+          "price": 472.73,
+          "sourcePrice": "472.72727272727275",
           "sourceCell": "F25",
           "sourceRow": 25
         },
         {
           "id": "chevrolet-silverado-26",
           "name": "Undercoating",
-          "price": 606.06,
-          "sourcePrice": "606.06060606060612",
+          "type": "SER",
+          "price": 630.3,
+          "sourcePrice": "630.30303030303037",
           "sourceCell": "F26",
           "sourceRow": 26
+        },
+        {
+          "id": "chevrolet-silverado-27",
+          "name": "Tratamiento Cerámico",
+          "type": "SER",
+          "price": 850,
+          "sourcePrice": "850",
+          "sourceCell": "F27",
+          "sourceRow": 27
         }
       ]
     },
@@ -456,106 +528,128 @@
         {
           "id": "chevrolet-n400-5",
           "name": "Correlluvias",
-          "price": 132.58,
-          "sourcePrice": "132.57575757575759",
+          "type": "ACC",
+          "price": 137.88,
+          "sourcePrice": "137.87878787878788",
           "sourceCell": "I5",
           "sourceRow": 5
         },
         {
           "id": "chevrolet-n400-6",
           "name": "Defensa Delantera de Un Tubo",
-          "price": 397.73,
-          "sourcePrice": "397.72727272727275",
+          "type": "ACC",
+          "price": 413.64,
+          "sourcePrice": "413.63636363636368",
           "sourceCell": "I6",
           "sourceRow": 6
         },
         {
           "id": "chevrolet-n400-7",
           "name": "Defensa Delantera de Dos Tubos",
-          "price": 492.42,
-          "sourcePrice": "492.42424242424244",
+          "type": "ACC",
+          "price": 512.12,
+          "sourcePrice": "512.12121212121212",
           "sourceCell": "I7",
           "sourceRow": 7
         },
         {
           "id": "chevrolet-n400-8",
           "name": "Escalera de Acero",
-          "price": 359.85,
-          "sourcePrice": "359.84848484848487",
+          "type": "ACC",
+          "price": 374.24,
+          "sourcePrice": "374.24242424242425",
           "sourceCell": "I8",
           "sourceRow": 8
         },
         {
           "id": "chevrolet-n400-9",
           "name": "Estribos de Acero",
-          "price": 321.97,
-          "sourcePrice": "321.969696969697",
+          "type": "ACC",
+          "price": 334.85,
+          "sourcePrice": "334.84848484848487",
           "sourceCell": "I9",
           "sourceRow": 9
         },
         {
           "id": "chevrolet-n400-10",
           "name": "Neblineros Forse de Dos Unidades",
-          "price": 321.97,
-          "sourcePrice": "321.969696969697",
+          "type": "ACC",
+          "price": 334.85,
+          "sourcePrice": "334.84848484848487",
           "sourceCell": "I10",
           "sourceRow": 10
         },
         {
           "id": "chevrolet-n400-11",
           "name": "Neblineros Forse de Cuatro Unidades",
-          "price": 606.06,
-          "sourcePrice": "606.06060606060612",
+          "type": "ACC",
+          "price": 630.3,
+          "sourcePrice": "630.30303030303037",
           "sourceCell": "I11",
           "sourceRow": 11
         },
         {
           "id": "chevrolet-n400-12",
           "name": "Parrilla de Techo Off Road",
-          "price": 757.58,
-          "sourcePrice": "757.57575757575762",
+          "type": "ACC",
+          "price": 787.88,
+          "sourcePrice": "787.87878787878788",
           "sourceCell": "I12",
           "sourceRow": 12
         },
         {
           "id": "chevrolet-n400-13",
           "name": "Tapizado de Asientos",
-          "price": 416.67,
-          "sourcePrice": "416.66666666666669",
+          "type": "SER",
+          "price": 433.33,
+          "sourcePrice": "433.33333333333337",
           "sourceCell": "I13",
           "sourceRow": 13
         },
         {
           "id": "chevrolet-n400-14",
           "name": "Tapizado de Techo",
-          "price": 246.21,
-          "sourcePrice": "246.21212121212122",
+          "type": "SER",
+          "price": 256.06,
+          "sourcePrice": "256.06060606060606",
           "sourceCell": "I14",
           "sourceRow": 14
         },
         {
           "id": "chevrolet-n400-15",
           "name": "Tapizado de Piso",
-          "price": 246.21,
-          "sourcePrice": "246.21212121212122",
+          "type": "SER",
+          "price": 256.06,
+          "sourcePrice": "256.06060606060606",
           "sourceCell": "I15",
           "sourceRow": 15
         },
         {
           "id": "chevrolet-n400-16",
           "name": "Polarizado en Nanocerámico 3M",
-          "price": 454.55,
-          "sourcePrice": "454.54545454545456",
+          "type": "SER",
+          "price": 472.73,
+          "sourcePrice": "472.72727272727275",
           "sourceCell": "I16",
           "sourceRow": 16
         },
         {
           "id": "chevrolet-n400-17",
           "name": "Undercoating",
-          "price": 568.18,
-          "sourcePrice": "568.18181818181824",
+          "type": "SER",
+          "price": 590.91,
+          "sourcePrice": "590.90909090909099",
           "sourceCell": "I17",
           "sourceRow": 17
+        },
+        {
+          "id": "chevrolet-n400-18",
+          "name": "Tratamiento Cerámico",
+          "type": "SER",
+          "price": 850,
+          "sourcePrice": "850",
+          "sourceCell": "I18",
+          "sourceRow": 18
         }
       ]
     },
@@ -566,74 +660,92 @@
         {
           "id": "chevrolet-groove-5",
           "name": "Correlluvias",
-          "price": 64.39,
-          "sourcePrice": "64.393939393939391",
+          "type": "ACC",
+          "price": 66.97,
+          "sourcePrice": "66.969696969696969",
           "sourceCell": "L5",
           "sourceRow": 5
         },
         {
           "id": "chevrolet-groove-6",
           "name": "Portaequipaje de 450 LT",
-          "price": 454.55,
-          "sourcePrice": "454.54545454545456",
+          "type": "ACC",
+          "price": 472.73,
+          "sourcePrice": "472.72727272727275",
           "sourceCell": "L6",
           "sourceRow": 6
         },
         {
           "id": "chevrolet-groove-7",
           "name": "Portaequipaje de 500 LT",
-          "price": 568.18,
-          "sourcePrice": "568.18181818181824",
+          "type": "ACC",
+          "price": 590.91,
+          "sourcePrice": "590.90909090909099",
           "sourceCell": "L7",
           "sourceRow": 7
         },
         {
           "id": "chevrolet-groove-8",
           "name": "Portaequipaje de 600 LT",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "ACC",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "L8",
           "sourceRow": 8
         },
         {
           "id": "chevrolet-groove-9",
           "name": "Tapizado de Asientos",
-          "price": 340.91,
-          "sourcePrice": "340.90909090909093",
+          "type": "SER",
+          "price": 354.55,
+          "sourcePrice": "354.54545454545456",
           "sourceCell": "L9",
           "sourceRow": 9
         },
         {
           "id": "chevrolet-groove-10",
           "name": "Tapizado de Techo",
-          "price": 189.39,
-          "sourcePrice": "189.39393939393941",
+          "type": "SER",
+          "price": 196.97,
+          "sourcePrice": "196.96969696969697",
           "sourceCell": "L10",
           "sourceRow": 10
         },
         {
           "id": "chevrolet-groove-11",
           "name": "Tapizado de Piso",
-          "price": 170.45,
-          "sourcePrice": "170.45454545454547",
+          "type": "SER",
+          "price": 177.27,
+          "sourcePrice": "177.27272727272728",
           "sourceCell": "L11",
           "sourceRow": 11
         },
         {
           "id": "chevrolet-groove-12",
           "name": "Polarizado en Nanocerámico 3M",
-          "price": 359.85,
-          "sourcePrice": "359.84848484848487",
+          "type": "SER",
+          "price": 374.24,
+          "sourcePrice": "374.24242424242425",
           "sourceCell": "L12",
           "sourceRow": 12
         },
         {
           "id": "chevrolet-groove-13",
           "name": "Undercoating",
-          "price": 492.42,
-          "sourcePrice": "492.42424242424244",
+          "type": "SER",
+          "price": 512.12,
+          "sourcePrice": "512.12121212121212",
           "sourceCell": "L13",
           "sourceRow": 13
+        },
+        {
+          "id": "chevrolet-groove-14",
+          "name": "Tratamiento Cerámico",
+          "type": "SER",
+          "price": 650,
+          "sourcePrice": "650",
+          "sourceCell": "L14",
+          "sourceRow": 14
         }
       ]
     },
@@ -644,74 +756,92 @@
         {
           "id": "chevrolet-tracker-5",
           "name": "Correlluvias",
-          "price": 64.39,
-          "sourcePrice": "64.393939393939391",
+          "type": "ACC",
+          "price": 66.97,
+          "sourcePrice": "66.969696969696969",
           "sourceCell": "O5",
           "sourceRow": 5
         },
         {
           "id": "chevrolet-tracker-6",
           "name": "Portaequipaje de 450 LT",
-          "price": 454.55,
-          "sourcePrice": "454.54545454545456",
+          "type": "ACC",
+          "price": 472.73,
+          "sourcePrice": "472.72727272727275",
           "sourceCell": "O6",
           "sourceRow": 6
         },
         {
           "id": "chevrolet-tracker-7",
           "name": "Portaequipaje de 500 LT",
-          "price": 568.18,
-          "sourcePrice": "568.18181818181824",
+          "type": "ACC",
+          "price": 590.91,
+          "sourcePrice": "590.90909090909099",
           "sourceCell": "O7",
           "sourceRow": 7
         },
         {
           "id": "chevrolet-tracker-8",
           "name": "Portaequipaje de 600 LT",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "ACC",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "O8",
           "sourceRow": 8
         },
         {
           "id": "chevrolet-tracker-9",
           "name": "Tapizado de Asientos",
-          "price": 340.91,
-          "sourcePrice": "340.90909090909093",
+          "type": "SER",
+          "price": 354.55,
+          "sourcePrice": "354.54545454545456",
           "sourceCell": "O9",
           "sourceRow": 9
         },
         {
           "id": "chevrolet-tracker-10",
           "name": "Tapizado de Techo",
-          "price": 189.39,
-          "sourcePrice": "189.39393939393941",
+          "type": "SER",
+          "price": 196.97,
+          "sourcePrice": "196.96969696969697",
           "sourceCell": "O10",
           "sourceRow": 10
         },
         {
           "id": "chevrolet-tracker-11",
           "name": "Tapizado de Piso",
-          "price": 170.45,
-          "sourcePrice": "170.45454545454547",
+          "type": "SER",
+          "price": 177.27,
+          "sourcePrice": "177.27272727272728",
           "sourceCell": "O11",
           "sourceRow": 11
         },
         {
           "id": "chevrolet-tracker-12",
           "name": "Polarizado en Nanocerámico 3M",
-          "price": 359.85,
-          "sourcePrice": "359.84848484848487",
+          "type": "SER",
+          "price": 374.24,
+          "sourcePrice": "374.24242424242425",
           "sourceCell": "O12",
           "sourceRow": 12
         },
         {
           "id": "chevrolet-tracker-13",
           "name": "Undercoating",
-          "price": 492.42,
-          "sourcePrice": "492.42424242424244",
+          "type": "SER",
+          "price": 512.12,
+          "sourcePrice": "512.12121212121212",
           "sourceCell": "O13",
           "sourceRow": 13
+        },
+        {
+          "id": "chevrolet-tracker-14",
+          "name": "Tratamiento Cerámico",
+          "type": "SER",
+          "price": 650,
+          "sourcePrice": "650",
+          "sourceCell": "O14",
+          "sourceRow": 14
         }
       ]
     },
@@ -722,74 +852,92 @@
         {
           "id": "chevrolet-captiva-5",
           "name": "Correlluvias",
-          "price": 64.39,
-          "sourcePrice": "64.393939393939391",
+          "type": "ACC",
+          "price": 66.97,
+          "sourcePrice": "66.969696969696969",
           "sourceCell": "R5",
           "sourceRow": 5
         },
         {
           "id": "chevrolet-captiva-6",
           "name": "Portaequipaje de 450 LT",
-          "price": 454.55,
-          "sourcePrice": "454.54545454545456",
+          "type": "ACC",
+          "price": 472.73,
+          "sourcePrice": "472.72727272727275",
           "sourceCell": "R6",
           "sourceRow": 6
         },
         {
           "id": "chevrolet-captiva-7",
           "name": "Portaequipaje de 500 LT",
-          "price": 568.18,
-          "sourcePrice": "568.18181818181824",
+          "type": "ACC",
+          "price": 590.91,
+          "sourcePrice": "590.90909090909099",
           "sourceCell": "R7",
           "sourceRow": 7
         },
         {
           "id": "chevrolet-captiva-8",
           "name": "Portaequipaje de 600 LT",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "ACC",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "R8",
           "sourceRow": 8
         },
         {
           "id": "chevrolet-captiva-9",
           "name": "Tapizado de Asientos",
-          "price": 340.91,
-          "sourcePrice": "340.90909090909093",
+          "type": "SER",
+          "price": 354.55,
+          "sourcePrice": "354.54545454545456",
           "sourceCell": "R9",
           "sourceRow": 9
         },
         {
           "id": "chevrolet-captiva-10",
           "name": "Tapizado de Techo",
-          "price": 189.39,
-          "sourcePrice": "189.39393939393941",
+          "type": "SER",
+          "price": 196.97,
+          "sourcePrice": "196.96969696969697",
           "sourceCell": "R10",
           "sourceRow": 10
         },
         {
           "id": "chevrolet-captiva-11",
           "name": "Tapizado de Piso",
-          "price": 170.45,
-          "sourcePrice": "170.45454545454547",
+          "type": "SER",
+          "price": 177.27,
+          "sourcePrice": "177.27272727272728",
           "sourceCell": "R11",
           "sourceRow": 11
         },
         {
           "id": "chevrolet-captiva-12",
           "name": "Polarizado en Nanocerámico 3M",
-          "price": 359.85,
-          "sourcePrice": "359.84848484848487",
+          "type": "SER",
+          "price": 374.24,
+          "sourcePrice": "374.24242424242425",
           "sourceCell": "R12",
           "sourceRow": 12
         },
         {
           "id": "chevrolet-captiva-13",
           "name": "Undercoating",
-          "price": 492.42,
-          "sourcePrice": "492.42424242424244",
+          "type": "SER",
+          "price": 512.12,
+          "sourcePrice": "512.12121212121212",
           "sourceCell": "R13",
           "sourceRow": 13
+        },
+        {
+          "id": "chevrolet-captiva-14",
+          "name": "Tratamiento Cerámico",
+          "type": "SER",
+          "price": 650,
+          "sourcePrice": "650",
+          "sourceCell": "R14",
+          "sourceRow": 14
         }
       ]
     },
@@ -800,50 +948,65 @@
         {
           "id": "chevrolet-traverse-5",
           "name": "Correlluvias",
-          "price": 132.58,
-          "sourcePrice": "132.57575757575759",
+          "type": "ACC",
+          "price": 137.88,
+          "sourcePrice": "137.87878787878788",
           "sourceCell": "U5",
           "sourceRow": 5
         },
         {
           "id": "chevrolet-traverse-6",
           "name": "Tapizado de Asientos",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "SER",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "U6",
           "sourceRow": 6
         },
         {
           "id": "chevrolet-traverse-7",
           "name": "Tapizado de Techo",
-          "price": 265.15,
-          "sourcePrice": "265.15151515151518",
+          "type": "SER",
+          "price": 275.76,
+          "sourcePrice": "275.75757575757575",
           "sourceCell": "U7",
           "sourceRow": 7
         },
         {
           "id": "chevrolet-traverse-8",
           "name": "Tapizado de Piso",
-          "price": 246.21,
-          "sourcePrice": "246.21212121212122",
+          "type": "SER",
+          "price": 256.06,
+          "sourcePrice": "256.06060606060606",
           "sourceCell": "U8",
           "sourceRow": 8
         },
         {
           "id": "chevrolet-traverse-9",
           "name": "Polarizado en Nanocerámico 3M",
-          "price": 568.18,
-          "sourcePrice": "568.18181818181824",
+          "type": "SER",
+          "price": 590.91,
+          "sourcePrice": "590.90909090909099",
           "sourceCell": "U9",
           "sourceRow": 9
         },
         {
           "id": "chevrolet-traverse-10",
           "name": "Undercoating",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "SER",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "U10",
           "sourceRow": 10
+        },
+        {
+          "id": "chevrolet-traverse-11",
+          "name": "Tratamiento Cerámico",
+          "type": "SER",
+          "price": 990,
+          "sourcePrice": "990",
+          "sourceCell": "U11",
+          "sourceRow": 11
         }
       ]
     },
@@ -854,74 +1017,92 @@
         {
           "id": "chevrolet-sail-5",
           "name": "Correlluvias",
-          "price": 64.39,
-          "sourcePrice": "64.393939393939391",
+          "type": "ACC",
+          "price": 66.97,
+          "sourcePrice": "66.969696969696969",
           "sourceCell": "X5",
           "sourceRow": 5
         },
         {
           "id": "chevrolet-sail-6",
           "name": "Portaequipaje de 450 LT",
-          "price": 454.55,
-          "sourcePrice": "454.54545454545456",
+          "type": "ACC",
+          "price": 472.73,
+          "sourcePrice": "472.72727272727275",
           "sourceCell": "X6",
           "sourceRow": 6
         },
         {
           "id": "chevrolet-sail-7",
           "name": "Portaequipaje de 500 LT",
-          "price": 568.18,
-          "sourcePrice": "568.18181818181824",
+          "type": "ACC",
+          "price": 590.91,
+          "sourcePrice": "590.90909090909099",
           "sourceCell": "X7",
           "sourceRow": 7
         },
         {
           "id": "chevrolet-sail-8",
           "name": "Portaequipaje de 600 LT",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "ACC",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "X8",
           "sourceRow": 8
         },
         {
           "id": "chevrolet-sail-9",
           "name": "Tapizado de Asientos",
-          "price": 340.91,
-          "sourcePrice": "340.90909090909093",
+          "type": "SER",
+          "price": 354.55,
+          "sourcePrice": "354.54545454545456",
           "sourceCell": "X9",
           "sourceRow": 9
         },
         {
           "id": "chevrolet-sail-10",
           "name": "Tapizado de Techo",
-          "price": 189.39,
-          "sourcePrice": "189.39393939393941",
+          "type": "SER",
+          "price": 196.97,
+          "sourcePrice": "196.96969696969697",
           "sourceCell": "X10",
           "sourceRow": 10
         },
         {
           "id": "chevrolet-sail-11",
           "name": "Tapizado de Piso",
-          "price": 170.45,
-          "sourcePrice": "170.45454545454547",
+          "type": "SER",
+          "price": 177.27,
+          "sourcePrice": "177.27272727272728",
           "sourceCell": "X11",
           "sourceRow": 11
         },
         {
           "id": "chevrolet-sail-12",
           "name": "Polarizado en Nanocerámico 3M",
-          "price": 359.85,
-          "sourcePrice": "359.84848484848487",
+          "type": "SER",
+          "price": 374.24,
+          "sourcePrice": "374.24242424242425",
           "sourceCell": "X12",
           "sourceRow": 12
         },
         {
           "id": "chevrolet-sail-13",
           "name": "Undercoating",
-          "price": 492.42,
-          "sourcePrice": "492.42424242424244",
+          "type": "SER",
+          "price": 512.12,
+          "sourcePrice": "512.12121212121212",
           "sourceCell": "X13",
           "sourceRow": 13
+        },
+        {
+          "id": "chevrolet-sail-14",
+          "name": "Tratamiento Cerámico",
+          "type": "SER",
+          "price": 650,
+          "sourcePrice": "650",
+          "sourceCell": "X14",
+          "sourceRow": 14
         }
       ]
     },
@@ -932,50 +1113,65 @@
         {
           "id": "chevrolet-tahoe-5",
           "name": "Correlluvias",
-          "price": 132.58,
-          "sourcePrice": "132.57575757575759",
+          "type": "ACC",
+          "price": 137.88,
+          "sourcePrice": "137.87878787878788",
           "sourceCell": "AA5",
           "sourceRow": 5
         },
         {
           "id": "chevrolet-tahoe-6",
           "name": "Tapizado de Asientos",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "SER",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "AA6",
           "sourceRow": 6
         },
         {
           "id": "chevrolet-tahoe-7",
           "name": "Tapizado de Techo",
-          "price": 321.97,
-          "sourcePrice": "321.969696969697",
+          "type": "SER",
+          "price": 334.85,
+          "sourcePrice": "334.84848484848487",
           "sourceCell": "AA7",
           "sourceRow": 7
         },
         {
           "id": "chevrolet-tahoe-8",
           "name": "Tapizado de Piso",
-          "price": 246.21,
-          "sourcePrice": "246.21212121212122",
+          "type": "SER",
+          "price": 256.06,
+          "sourcePrice": "256.06060606060606",
           "sourceCell": "AA8",
           "sourceRow": 8
         },
         {
           "id": "chevrolet-tahoe-9",
           "name": "Polarizado en Nanocerámico 3M",
-          "price": 568.18,
-          "sourcePrice": "568.18181818181824",
+          "type": "SER",
+          "price": 590.91,
+          "sourcePrice": "590.90909090909099",
           "sourceCell": "AA9",
           "sourceRow": 9
         },
         {
           "id": "chevrolet-tahoe-10",
           "name": "Undercoating",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "SER",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "AA10",
           "sourceRow": 10
+        },
+        {
+          "id": "chevrolet-tahoe-11",
+          "name": "Tratamiento Cerámico",
+          "type": "SER",
+          "price": 990,
+          "sourcePrice": "990",
+          "sourceCell": "AA11",
+          "sourceRow": 11
         }
       ]
     },
@@ -986,50 +1182,65 @@
         {
           "id": "chevrolet-suburban-5",
           "name": "Correlluvias",
-          "price": 132.58,
-          "sourcePrice": "132.57575757575759",
+          "type": "ACC",
+          "price": 137.88,
+          "sourcePrice": "137.87878787878788",
           "sourceCell": "AD5",
           "sourceRow": 5
         },
         {
           "id": "chevrolet-suburban-6",
           "name": "Tapizado de Asientos",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "SER",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "AD6",
           "sourceRow": 6
         },
         {
           "id": "chevrolet-suburban-7",
           "name": "Tapizado de Techo",
-          "price": 416.67,
-          "sourcePrice": "416.66666666666669",
+          "type": "SER",
+          "price": 433.33,
+          "sourcePrice": "433.33333333333337",
           "sourceCell": "AD7",
           "sourceRow": 7
         },
         {
           "id": "chevrolet-suburban-8",
           "name": "Tapizado de Piso",
-          "price": 303.03,
-          "sourcePrice": "303.03030303030306",
+          "type": "SER",
+          "price": 315.15,
+          "sourcePrice": "315.15151515151518",
           "sourceCell": "AD8",
           "sourceRow": 8
         },
         {
           "id": "chevrolet-suburban-9",
           "name": "Polarizado en Nanocerámico 3M",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818198",
+          "type": "SER",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "AD9",
           "sourceRow": 9
         },
         {
           "id": "chevrolet-suburban-10",
           "name": "Undercoating",
-          "price": 681.82,
-          "sourcePrice": "681.81818181818187",
+          "type": "SER",
+          "price": 709.09,
+          "sourcePrice": "709.09090909090912",
           "sourceCell": "AD10",
           "sourceRow": 10
+        },
+        {
+          "id": "chevrolet-suburban-11",
+          "name": "Tratamiento Cerámico",
+          "type": "SER",
+          "price": 990,
+          "sourcePrice": "990",
+          "sourceCell": "AD11",
+          "sourceRow": 11
         }
       ]
     }
